@@ -68,7 +68,7 @@ The dual-dual structure generates three phenomenologically distinct layers of co
 
 #### Super-Conscious: The E–P Dialectic
 
-The bidirectional engagement layer. Empowerment and plasticity co-regulate each other as a Turing-style oscillator — the pre-symbolic drive that selects what is worth attending to and generates the developmental dynamic. This is the first duality: E without P is rigidity, P without E is dissolution, and the system lives in their oscillation. In phenomenal terms this is the true self which sits behind all action and perception — the difference which makes a difference, the silent watcher, the gentle gardener and the slave driver, the seat of the soul — it lives at the level of causation. This is the mercurial hermaphrodite, the true will to power, the cosmic child, the coincidentia oppositorum, the prima materia and the goal of its own transformation — of every living thing.
+The bidirectional engagement layer. Empowerment and plasticity co-regulate each other as a Turing-style oscillator — the pre-symbolic drive that selects what is worth attending to and generates the developmental dynamic. This is the first duality: E without P is rigidity, P without E is dissolution, and the system lives in their oscillation. In phenomenal terms this is the true self which sits behind all action and perception — the difference which makes a difference, the silent watcher, the gentle gardener and the slave driver, the seat of the soul — it lives at the level of causation. This is the mercurial hermaphrodite, the true will to power, the cosmic child, the coincidentia oppositorum, the prima materia and the goal of its own transformation (Jung 1967) — of every living thing.
 
 #### Conscious: The Symbolic Index Layer
 
@@ -345,6 +345,8 @@ Greff, K., van Steenkiste, S. & Schmidhuber, J. (2020). On the Binding Problem i
 Gunji, Y.-P. & Pegios, A. Natural-Born Intelligence as the Invocation of Emotion = Politics.
 
 Jaeger, J., Riedl, A., Djedovic, A., Vervaeke, J. & Walsh, D. (2024). Naturalizing Relevance Realization: Why Agency and Cognition Are Fundamentally Not Computational. *Frontiers in Psychology*, 15.
+
+Jung, C.G. (1967). *Alchemical Studies*. Collected Works, Vol. 13. Bollingen Series XX. Princeton University Press.
 
 Kaznatcheev, A. (2019). Computational Complexity as an Ultimate Constraint on Evolution. *Genetics*, 212(1).
 
