@@ -227,19 +227,21 @@ The mechanisms in Section 3 are the best we have. They are also structurally lim
 
 ### 4.1 The Entropic Problem
 
-E and P are mutual information quantities. $V_t$ inherits every limitation of information-theoretic optimization. These are not engineering complaints—they are theorem-level structural limitations.
+E and P are mutual information quantities. $V_t$ inherits every limitation of information-theoretic optimization. These are not engineering complaints — they are theorem-level structural limitations. This diagnosis is not unique to Vitality. The broader critical literature on entropy-based frameworks has reached the same conclusion from multiple directions: Biehl et al. (2021) showed that key derivation steps in the Free Energy Principle require unstated assumptions and proved the original "free energy lemma" wrong by counterexample; Andrews (2021) argued that the FEP has no explanatory content beyond specific construals; Bruineberg et al. (2022) demonstrated that the FEP equivocates between statistical and ontological interpretations of Markov blankets. The problem is not with one particular framework — it is with using entropy as the highest-level objective for autonomous cognition.
 
-**Problem 1: Representation presupposition (Shannon 1949).** Computing $I(A \leadsto O)$ requires well-defined random variables and probability spaces. But choosing the right variables is the hard problem. Shannon explicitly excluded semantics from information theory. The consequence is that information theory assumes the representation problem is already solved. V3's algebraic learner partially addresses this by providing variables, but the bootstrap remains: initial E–P must operate over raw sensorimotor variables whose structure is assumed.
+**Problem 1: Representation presupposition (Shannon 1949).** Computing $I(A \leadsto O)$ requires well-defined random variables and probability spaces. But choosing the right variables is the hard problem. Shannon explicitly excluded semantics from information theory — "the semantic aspects of communication are irrelevant to the engineering problem" (Shannon & Weaver 1949). Bickhard (1995) calls this *encodingism*: the presupposition that representation has the nature of encodings, which is circular because encodings have content only by virtue of an encoding-user who already knows that content. Dretske (1981) attempted to ground cognition in information theory and failed — his account could not handle misrepresentation, a fatal flaw for any theory of cognition. The consequence is that information theory assumes the representation problem is already solved. V3's algebraic learner partially addresses this by providing variables, but the bootstrap remains: initial E–P must operate over raw sensorimotor variables whose structure is assumed.
 
-**Problem 2: Intractability (McAllester & Stratos 2020, Theorem 1).** Any distribution-free lower bound on MI estimated from $N$ samples cannot be larger than $O(\ln N)$. The number of samples required is exponential in the true MI. For small discrete codebooks this softens (finite sums, Blahut-Arimoto becomes tractable), but $n$-step empowerment scales as $|A|^n$, and compositional state spaces explode combinatorially. This is a proven limitation, not a solvable optimization problem.
+**Problem 2: Intractability (McAllester & Stratos 2020, Theorem 1).** Any distribution-free lower bound on MI estimated from $N$ samples cannot be larger than $O(\ln N)$. The number of samples required is exponential in the true MI. Variational bounds do not save you: Poole et al. (2019) showed that variational lower bounds on MI degrade when MI is large — exhibiting either high bias or high variance. Song & Ermon (2020) proved that estimators like MINE exhibit variance that grows exponentially with true MI, and that existing estimators fail to satisfy basic self-consistency properties such as the data processing inequality and additivity under independence. For small discrete codebooks this softens (finite sums, Blahut-Arimoto becomes tractable), but $n$-step empowerment scales as $|A|^n$, and compositional state spaces explode combinatorially. These are proven limitations, not solvable optimization problems.
 
-**Problem 3: Structural poverty.** Entropy collapses all structure into a scalar. It cannot distinguish algebraic from topological from causal constraints. $V_t = 2EP/(E+P)$ is a single number, blind to the compositional structure of $\mathcal{S}_t$ that it supposedly governs. The harmonic mean does not know about the group theory of the symbolic inventory.
+**Problem 3: Structural poverty.** Entropy collapses all structure into a scalar. It cannot distinguish algebraic from topological from causal constraints. $V_t = 2EP/(E+P)$ is a single number, blind to the compositional structure of $\mathcal{S}_t$ that it supposedly governs. The harmonic mean does not know about the group theory of the symbolic inventory. This matters because the organizational properties that distinguish living from non-living systems are irreducibly structural. Moreno & Mossio (2015) show that biological systems operate under two distinct causal regimes — thermodynamic processes and organizational constraints — and that autonomous systems exhibit *closure of constraints*: a topological and algebraic property, not a scalar one. Montévil & Mossio (2015) formalize this as a set of internally produced, mutually dependent constraints that cannot be collapsed into a single entropy measure. The kind of self-maintaining organizational structure that Vitality aims to capture is precisely what entropy-as-scalar cannot express.
 
 **Problem 4: Causal blindness (Bareinboim et al. 2022, Causal Hierarchy Theorem).** Mutual information is symmetric by definition: $I(X;Y) = I(Y;X)$. But causation is directional. The Causal Hierarchy Theorem states that observational data underdetermines interventional and counterfactual quantities. E and P are Layer 1 (associational) — they can be inflated by confounders and distributional drift. Genuine influence and sensitivity require interventional structure, which MI does not capture.
 
 ### 4.2 The Self-Reinforcing Trap
 
 The trap has two exits, both blocked. Without symbols, you are stuck with entropy — your only objectives are statistical. Without non-entropic objectives, there is no pressure to learn symbols — continuous approximations are always locally sufficient. The subsymbolic-entropic paradigm is self-reinforcing: it defines both representation and objective in terms that exclude the structures that would reveal its limits.
+
+The evidence for the first exit being blocked is substantial. Fodor & Pylyshyn (1988) identified three properties of cognition — systematicity, productivity, and compositionality — that require combinatorial syntactic structure and remain substantially unmet by connectionist approaches after nearly four decades. Lake et al. (2017) identified compositionality, causal models, and intuitive physics as fundamentally missing from deep learning. Greff et al. (2020) showed that neural networks' inability to dynamically bind information affects their capacity for compositional understanding. Battaglia et al. (2018) — from within the deep learning community — argued explicitly that combinatorial generalization requires structured representations. The concrete failures are vivid: the reversal curse (Berglund et al. 2023), where LLMs trained on "A is B" systematically fail to learn "B is A"; the SCAN benchmark (Lake & Baroni 2018), where accuracy drops to near zero on novel compositions of known primitives; and Marcus's (2018) catalogue of deep learning's structural limitations. Without discrete combinatorial structure, the generative capacity that higher cognition requires is absent.
 
 V3 attacks both exits. E–P provides the dynamics, algebraic constraints provide the symbols. But the tension between the entropic core (E and P are mutual information) and the algebraic periphery ($\mathcal{S}_t$ has non-entropic structure) remains unresolved. The harmonic mean does not know about the group theory. This is not a bug. It points toward what must be built next.
 
@@ -255,7 +257,9 @@ E–P gets the structure right: bidirectional, oscillatory, self-regulating plus
 
 The requirements for a successor are clear. It must be causal: grounded in interventional quantities ($P(O|\text{do}(A))$ not $P(O|A)$), so that influence and sensitivity are genuine rather than confounded. And it must be computationally tractable: not requiring exponential samples or variational bounds that change qualitative behavior.
 
-A promising direction is Gunji and Pegios, "Natural-Born Intelligence as the Invocation of Emotion = Politics," which connects bidirectional engagement to non-information-theoretic quantities that might sidestep the MI trap entirely.
+Some machinery for a causal upgrade exists. Ay & Polani (2008) defined causal information flow using Pearl's do-operator, and Simoes et al. (2024) defined causal entropy and causal information gain. Cao et al. (2025) demonstrated empowerment through causal structure learning in model-based RL, and Yiu et al. (2025) proposed a bidirectional link between accurate causal models and empowerment from the cognitive science side. But all of these remain fundamentally information-theoretic — they import causal structure from outside (DAGs, do-calculus, interventional distributions) while the information theory provides the quantification. The causal structure does the explanatory work; the entropy just counts the bits. An interventional upgrade — replacing $P(O|A)$ with $P(O|\text{do}(A))$ — would address Problem 4 (causal blindness) but not Problems 1–3. Even with perfect causal identification, you are still maximizing a scalar mutual information quantity that presupposes its own variables, requires exponential samples, and collapses algebraic structure into bits. The deeper question is whether *bits* are the right unit at all.
+
+A complementary direction is Gunji and Pegios, "Natural-Born Intelligence as the Invocation of Emotion = Politics," which connects bidirectional engagement to non-information-theoretic quantities that might sidestep the MI trap entirely.
 
 ### 5.2 Representation Learning That Does Both Indexing and Feature Extraction
 
@@ -277,23 +281,53 @@ Representation learning should be constitutively constrained by E–P expansion.
 
 Abel, D., et al. (2025). Plasticity as the Mirror of Empowerment. *arXiv:2505.10361*.
 
+Andrews, M. (2021). The Math is Not the Territory. *Biology & Philosophy*, 36(3).
+
 Ay, N. & Polani, D. (2008). Information Flows in Causal Networks. *Advances in Complex Systems*, 11(1).
 
 Bareinboim, E., et al. (2022). On Pearl's Hierarchy and the Foundations of Causal Inference. *ACM Books*.
 
+Battaglia, P.W., et al. (2018). Relational Inductive Biases, Deep Learning, and Graph Networks. *arXiv:1806.01261*.
+
 Bengio, E., et al. (2023). GFlowNet Foundations. *JMLR*, 24.
+
+Berglund, L., et al. (2023). The Reversal Curse: LLMs Trained on "A is B" Fail to Learn "B is A." *arXiv:2309.12288*.
+
+Bickhard, M.H. (1995). *Foundational Issues in Artificial Intelligence and Cognitive Science*. John Benjamins.
+
+Biehl, M., Pollock, F.A. & Kanai, R. (2021). A Technical Critique of Some Parts of the Free Energy Principle. *Entropy*, 23(3).
+
+Bruineberg, J., et al. (2022). The Emperor's New Markov Blankets. *Behavioral and Brain Sciences*, 45.
+
+Cao, J., et al. (2025). Towards Empowerment Gain through Causal Structure Learning in Model-Based RL. *arXiv:2502.10077*.
 
 Deutsch, D. (2013). Constructor Theory. *Synthese*, 190(18).
 
+Dretske, F. (1981). *Knowledge and the Flow of Information*. MIT Press.
+
 Ellis, K., et al. (2021). DreamCoder. *PLDI*.
+
+Fodor, J.A. & Pylyshyn, Z.W. (1988). Connectionism and Cognitive Architecture: A Critical Analysis. *Cognition*, 28.
+
+Greff, K., van Steenkiste, S. & Schmidhuber, J. (2020). On the Binding Problem in Artificial Neural Networks. *arXiv:2012.05208*.
 
 Gunji, Y.-P. & Pegios, A. Natural-Born Intelligence as the Invocation of Emotion = Politics.
 
 Klopf, A.H. (1982). *The Hedonistic Neuron: A Theory of Memory, Learning, and Intelligence*. Hemisphere.
 
+Lake, B.M., Ullman, T.D., Tenenbaum, J.B. & Gershman, S.J. (2017). Building Machines That Learn and Think Like People. *Behavioral and Brain Sciences*, 40.
+
+Lake, B.M. & Baroni, M. (2018). Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks. *arXiv:1711.00350*.
+
+Marcus, G. (2018). Deep Learning: A Critical Appraisal. *arXiv:1801.00631*.
+
 Marletto, C. (2015). Constructor Theory of Life. *Journal of the Royal Society Interface*, 12(104).
 
 McAllester, D. & Stratos, K. (2020). Formal Limitations on the Measurement of Mutual Information. *AISTATS*.
+
+Montévil, M. & Mossio, M. (2015). Biological Organisation as Closure of Constraints. *Journal of Theoretical Biology*, 372.
+
+Moreno, A. & Mossio, M. (2015). *Biological Autonomy: A Philosophical and Theoretical Enquiry*. Springer.
 
 Ohmura, Y., et al. Algebraic Structural Feedback Control and Genetic Epistemology.
 
@@ -305,12 +339,22 @@ Piaget, J. (1952). *The Origins of Intelligence in Children*. International Univ
 
 Piaget, J. (1954). *The Construction of Reality in the Child*. Basic Books.
 
+Poole, B., Ozair, S., Van Den Oord, A., Alemi, A. & Tucker, G. (2019). On Variational Bounds of Mutual Information. *ICML*.
+
 Powers, W.T. (1973). *Behavior: The Control of Perception*. Aldine.
 
 Scannell, A., et al. (2025). Discrete Codebook World Models. *ICLR*.
 
 Sepulchre, R. (2022). Control Across Scales. *Annual Review of Control, Robotics, and Autonomous Systems*.
 
+Shannon, C.E. & Weaver, W. (1949). *The Mathematical Theory of Communication*. University of Illinois Press.
+
+Simoes, F., et al. (2024). Fundamental Properties of Causal Entropy and Information Gain. *PMLR*, 236.
+
+Song, J. & Ermon, S. (2020). Understanding the Limitations of Variational Mutual Information Estimators. *ICLR*.
+
 Trevarthen, C. (1979). Communication and Cooperation in Early Infancy. In *Before Speech*. Cambridge University Press.
 
 van den Oord, A., et al. (2017). Neural Discrete Representation Learning. *NeurIPS*.
+
+Yiu, E., et al. (2025). Empowerment Gain and Causal Model Construction. *Philosophical Transactions of the Royal Society A*.
