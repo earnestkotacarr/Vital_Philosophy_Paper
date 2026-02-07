@@ -1,94 +1,40 @@
 # Ralph Loop Activity Log
 
-## Project: Vitality3 Paper Revision — Round 2
+## Project: Vitality3 Paper Revision — Round 3b (Correction)
 Started: 2026-02-07
 
----
-
-### Task 0: Read V2 for prose style, read current V3 drafts, understand changes needed
-**Status:** COMPLETE
-
-**Observations:**
-- **V2 style:** Uses flowing prose paragraphs with occasional formal definition/proposition environments. Bullet points are used sparingly for genuine parallel enumerations, not as default structure. The paper READS well — it has a narrative flow.
-- **Current V3 style:** Every section converted to bullet-point soup. Even prose content broken into bullets. Overuses formal definition environments. Choppy and unreadable.
-- **Autonomy/Vitality definition error:** Current V3 Definition 1 says "vitality is the measure of how well both [self-regulation and self-amplification] are working." This is WRONG. Vitality is the Turing-esque dynamical co-regulatory regime (E and P co-regulating each other), NOT just a score. V_t is a measure of vitality, but vitality itself is the coupled pattern.
-- **Missing constructionist idea:** Morphogens as self-persisting information (knowledge in constructionist sense) not yet integrated into morphogen section.
-
-**Plan for remaining tasks:**
-1. Fix autonomy/vitality definitions throughout (Task 1)
-2. Convert bullet-soup back to flowing prose paragraphs (Task 2)
-3. Add constructionist knowledge idea to morphogen section (Task 3)
-4. Final coherence pass (Task 4)
+Round 3 (tasks 0-5) completed but the autonomy framing was wrong — it said viability has autonomy too. WRONG. Viability is purely negative feedback, not autonomous. Only Vitality has autonomy. This round corrects that.
 
 ---
 
-### Task 1: Fix autonomy/vitality definition error throughout
-**Status:** COMPLETE
+## Iteration 1 (Tasks 0-2)
+Completed: 2026-02-07
 
-**Changes made:**
-- Fixed Definition (Autonomy) to clarify that vitality is the co-regulatory regime, not just a capacity measure
-- Split "Vitality Score" definition into two parts: prose explanation of vitality as co-regulatory regime + formal Definition of V_t as a MEASURE of that regime
-- Updated Definition (Vitality, Version 3) to emphasize it's about sustaining the E–P co-regulatory regime
-- Fixed section 5.4 "The dual structure" to clarify vitality is the pattern, V_t measures it
-- Applied all changes to BOTH .md and .tex files (kept in sync)
+### Task 0: Read and locate autonomy/viability discussions
+Read both Vitality3.md and Vitality3.tex. Located problematic sections:
+- §1.3 Definition of Autonomy (lines 37-39 .md, lines 67-70 .tex)
+- §5.4 Clarifying Autonomy (lines 245-260 .md, lines 303-318 .tex)
 
----
+Both sections wrongly characterized viability as "the first sense of autonomy." This contradicts the correction requirement.
 
-### Task 2: Convert bullet-soup sections back to flowing prose paragraphs
-**Status:** COMPLETE
+### Task 1: Fix autonomy framing
+**§1.3 Definition of Autonomy** — Replaced two-senses framing with correct distinction:
+- OLD: "Autonomy operates in two senses: (1) viability maintains organism, (2) E-P oscillator is autonomous"
+- NEW: "Viability is purely negative feedback (reactive, NOT autonomous). Only the E-P oscillator has genuine autonomy (self-generated movement via coupled positive-negative feedback)."
+- Added: "Viability keeps you alive. Vitality makes you autonomous."
 
-**Changes made:**
-- Converted Section 1 (Play) subsections 1.1-1.4 from bullet lists to flowing prose
-- Converted Section 2 (Vitality: Formalizing Play) setup and prose sections to prose (kept formal definitions intact)
-- Converted Section 2.3 (Temporal Morphogens) structure explanation to flowing prose
-- Converted Section 2.4 (Symbolic Abstraction) requirements to prose
-- Converted Section 2.5 concluding remarks to prose
-- Converted Section 3.1-3.2 (Best Mechanisms) completely to prose paragraphs
-- Converted Section 3.3 subsections (E–P as Selection Pressure, Symbols as Substrates, Hierarchical Dynamics) to flowing prose
-- Converted Section 4 (Problems) from bullet lists to prose paragraphs with bold problem headings
-- Converted Section 5 (What Needs to Be Done) subsections 5.1-5.4 to flowing prose
-- Applied ALL changes to BOTH .md and .tex files in perfect sync
-- Kept pathologies table in Section 2.6 as table (genuine parallel enumeration)
-- Kept formal definition/proposition environments for key definitions only
-- Result: paper now READS like V2 — flowing coherent prose, not bullet soup
+**§5.4 Clarifying Autonomy** — Same correction pattern:
+- OLD: "Autonomy operates in two senses: viability-autonomy and play-autonomy"
+- NEW: "Autonomy distinguishes from viability. Viability = purely negative feedback (not autonomous). E-P oscillator = genuine autonomy."
+- Emphasized: "A thermostat is viable" but not autonomous. "Viability requires external perturbation." Only the E-P oscillator generates self-movement.
 
----
+Both files (.md and .tex) updated in sync.
 
-### Task 3: Add constructionist knowledge idea to morphogen section
-**Status:** COMPLETE
+### Task 2: Final coherence pass
+- Grepped for all "viab" occurrences — confirmed only corrected characterizations remain
+- Grepped for "autonom.*viab" patterns — confirmed no wrong framings
+- Read §1.3 in both files — perfect sync
+- Read §5.4 in both files — perfect sync
+- Verified flowing prose throughout (no bullets introduced)
 
-**Changes made:**
-- Added "Knowledge as self-persisting information" paragraph to Section 2.3 (Temporal Morphogens)
-- Woven in naturally after Definition (Internalization), before Structure discussion
-- Key idea: morphogens are knowledge in Piagetian constructionist sense — not stored data but self-maintaining structure
-- They persist because they regulate the interactions that regenerate them
-- Applied to BOTH .md and .tex files (kept in sync)
-
----
-
-### Task 4: Final coherence pass
-**Status:** COMPLETE
-
-**Verification:**
-- ✓ Does it flow? YES — paper reads as coherent narrative with flowing prose paragraphs like V2
-- ✓ Is it readable? YES — colloquial but rigorous tone maintained throughout
-- ✓ Are .md and .tex synced? YES — verified constructionist knowledge paragraph, vitality definition fix, and prose conversions present in both files
-- ✓ Line counts reasonable: .md has 272 lines, .tex has 333 lines (difference due to LaTeX markup)
-- ✓ All three problems from plan.md addressed:
-  1. Bullet-soup converted to flowing prose
-  2. Vitality definition corrected (vitality = co-regulatory regime, V_t = measure)
-  3. Constructionist knowledge idea integrated into morphogen section
-- Paper is ready for use
-
----
-
-## Round 2 Summary
-
-**All tasks completed successfully:**
-- Task 0: Read V2 for prose style, understood needed changes
-- Task 1: Fixed autonomy/vitality definition error throughout
-- Task 2: Converted bullet-soup to flowing prose (major restructuring)
-- Task 3: Added constructionist knowledge idea to morphogen section
-- Task 4: Final coherence verification
-
-**Result:** Vitality3 paper now has the rigor and formal structure of the V3 content but the readability and prose flow of V2. The paper READS well as a coherent technical white paper, not as an extended bulleted list.
+**Result:** The autonomy/viability distinction is now correct throughout both files. Viability is purely negative feedback control (reactive, not autonomous). Vitality (the E-P oscillator) is genuine autonomy (self-generated developmental dynamics).

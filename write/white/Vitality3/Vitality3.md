@@ -16,7 +16,7 @@ We propose Vitality as a formal theory of autonomous development grounded in pla
 
 ### 1.1 Observation: Play Is Not Recreation
 
-Play appears across species wherever nervous systems support flexible behavior. The evidence is compelling: Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities.
+Play appears across species wherever nervous systems support flexible behavior. The evidence is compelling: Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition, explicitly characterizing it through *vitality affects* and *vitality dynamics* — the reciprocal, temporally structured emotional exchanges between infant and caregiver that scaffold all later development; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities. The term "vitality" itself has deep roots in developmental psychology, grounding our formalism in the empirical study of dynamic, reciprocal engagement.
 
 ### 1.2 First Capacity: Dynamic Bidirectional Engagement
 
@@ -34,7 +34,9 @@ Sepulchre (2022) showed that robust adaptive systems require both positive and n
 
 The connection to empowerment and plasticity is direct. Empowerment is positive feedback: self-amplifying, extending influence outward. Plasticity is negative feedback: self-regulating, accommodating perturbation inward. Vitality is the regime where both are active and coupled.
 
-**Definition (Autonomy).** Autonomy is self-regulation AND self-amplification (homeostasis + heterostasis). The self-regulating component maintains viability; the self-amplifying component drives expansion of behavioral repertoire. Vitality is the dynamical regime where these two processes co-regulate each other.
+**Definition (Autonomy).** Autonomy is self-regulation AND self-amplification (homeostasis + heterostasis) operating together as a coupled system. This is not viability. Viability — the maintenance of organismic integrity through negative feedback alone — is purely reactive. A thermostat is viable. Viability requires outside perturbation to produce any behavior; it is self-regulating but not self-amplifying. It keeps you alive but does not generate its own movement.
+
+Genuine autonomy requires both directions coupled. The E–P oscillator exhibits this: when empowerment and plasticity are coupled as a Turing-style dynamical system, the system self-regulates (E regulates P, P regulates E) and self-amplifies (each enhances the other's growth). The oscillator generates its own developmental dynamics without requiring external perturbation. Vitality is this autonomous regime: the E–P engine sustains itself through bidirectional co-regulation, producing self-generated movement. Viability keeps you alive. Vitality makes you autonomous.
 
 ### 1.4 Second Capacity: Symbolic Abstraction
 
@@ -52,6 +54,24 @@ The symbolic capacity couples naturally to the dynamic capacity. Active probing 
 (d) **Repeat**.
 
 Result: open-ended growth without external rewards or hand-designed curricula.
+
+### 1.6 The Dual-Dual Structure
+
+These two capacities generate a dual-dual architecture, exhibiting complementary structure along two orthogonal dimensions.
+
+**First duality: Dialectical E–P oscillation.** Bidirectional engagement is inherently dialectical. Empowerment and plasticity are not additive components but mutually regulating opposites that co-constitute the developmental dynamic. E without P is rigidity; P without E is dissolution. The developmental engine lives in their oscillation, not in either pole alone. This is a temporal, processual duality — the system cycles between phases dominated by each capacity.
+
+**Second duality: Three-layered architecture.** The system stratifies into three levels, each with its own phenomenological character:
+
+- **Super-conscious layer**: Bidirectional intrinsic motivation (the E–P oscillation itself). This is the "intentional" layer — the system's drive toward expanded engagement. It operates above explicit symbolic representation, guiding what the agent attends to and how it probes the world. In developmental terms, this is primary intersubjectivity, the pre-symbolic pull toward reciprocal interaction.
+
+- **Conscious layer**: Symbolic abstraction. This is the layer of explicit representation — discrete, addressable, combinable symbols extracted from interaction. It corresponds to what can be linguistically articulated, deliberately manipulated, and consciously reflected upon. In Piaget's terms, this is the operational layer where schemes become objects of thought.
+
+- **Sub-conscious layer**: Neuronal dynamics and world dynamics. This is the mechanistic substrate — neurons firing, bodies moving, physics unfolding. It implements the upper layers but is not accessible to symbolic inspection. The agent does not "know" its neuron states or the equations governing its environment; these are the pre-reflective ground from which experience emerges.
+
+The three layers are not independent modules but aspects of a single dynamical system. E–P (super-conscious) selects which symbolic structures (conscious) are worth constructing from the substrate (sub-conscious). Symbols, once extracted, become new targets for E–P, reshaping the super-conscious layer's landscape. And the sub-conscious substrate constrains and enables what both upper layers can do — you cannot oscillate over abstractions your neurons cannot represent.
+
+The system is thus dual-dual: it oscillates dialectically within the E–P dimension, and it stratifies hierarchically across three phenomenological layers. Both dualities are constitutive. Collapsing either — reducing the system to a single-layer architecture, or eliminating the dialectical tension within E–P — destroys the developmental loop.
 
 ---
 
@@ -214,11 +234,11 @@ The requirements are twofold: the system must index the world into discrete, add
 
 Current methods fail at the intersection. VQ-VAE indexes but doesn't extract algebraic structure. Ohmura's algebraic constraints extract structure but don't produce an indexed vocabulary. What's needed is a system that builds a discrete inventory of structurally meaningful features, where the indexing and the structure are the same thing.
 
-### 5.3 Integration: Representation Learning Constrained by the Mother-of-All-Valleys Intrinsic Motivation
+### 5.3 Integration: Representation Learning Constrained by the Mother-of-All-Values Intrinsic Motivation
 
 This is the deepest open problem. The dynamic engagement component — E–P, or its causal successor — should function as a higher-order constraint on representation learning, not just supplying selection pressure for features but determining what kind of representations are worth having in the first place.
 
-Intrinsic motivation is the mother of all valleys, the master landscape that all representation learning descends into. Features are valuable not because they compress data, not because they reconstruct observations, but because they expand the agent's capacity for bidirectional engagement with the world.
+Intrinsic motivation is the mother of all values, the master landscape that all representation learning descends into. Features are valuable not because they compress data, not because they reconstruct observations, but because they expand the agent's capacity for bidirectional engagement with the world.
 
 Representation learning should be constitutively constrained by E–P expansion. The objective for feature extraction should not be reconstruction or contrastive prediction, but E–P expansion itself. The symbolic and dynamic components are not just coupled — they are aspects of a single process. The agent simultaneously learns what to attend to and how to engage with what it attends to.
 
@@ -231,7 +251,11 @@ The notion of autonomy underlying all of this must be made explicit.
 
 This is not just homeostasis (Wiener, Ashby). Not just heterostasis (Klopf). Both, coupled, in the same system.
 
-The dual structure is as follows. The self-regulating side (plasticity, negative feedback, accommodation) keeps the system viable. The self-amplifying side (empowerment, positive feedback, assimilation) drives it toward expanded engagement. Vitality is the dynamical regime where both are coupled and co-regulating. $V_t$ measures the strength of this regime, but vitality itself is the pattern of E–P co-regulation, not the score.
+This definition distinguishes autonomy from viability. Viability is purely negative feedback — self-regulation without self-amplification. A thermostat is viable. It maintains a set-point through reactive correction, but it does not generate its own movement. Viability requires external perturbation to produce behavior. An organism can be viable (persist as a coherent entity through homeostatic regulation) without being autonomous in the sense we mean here.
+
+Genuine autonomy requires the E–P oscillator. When empowerment and plasticity are coupled as a dynamical system, that coupled system is autonomous. E regulates P (influencing the world shapes what can reconfigure you), and P regulates E (reconfigurability sustains influence in non-stationary environments). The oscillator self-regulates through this bidirectional coupling. Simultaneously, E and P mutually amplify each other: expanded empowerment generates richer feedback for plasticity, and expanded plasticity enables more sophisticated empowerment. The E–P engine generates its own developmental dynamics. It does not wait for perturbation — it produces self-generated movement.
+
+Vitality is this autonomous regime. The E–P oscillator sustains itself through bidirectional co-regulation. $V_t$ measures the strength of this regime, but vitality itself is the pattern of E–P co-regulation, not the score. Viability keeps you alive. Vitality makes you autonomous.
 
 The convergence is striking. Sepulchre's control-across-scales work demands this dual structure. Klopf diagnosed its absence in cybernetics. Play provides it naturally: a regime where self-regulation and self-amplification are co-constitutive, not in tension.
 
