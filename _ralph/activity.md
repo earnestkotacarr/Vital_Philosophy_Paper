@@ -1,40 +1,66 @@
 # Ralph Loop Activity Log
 
-## Project: Vitality3 Paper Revision — Round 3b (Correction)
+## Project: Vitality3 Paper Revision — Round 4
 Started: 2026-02-07
 
-Round 3 (tasks 0-5) completed but the autonomy framing was wrong — it said viability has autonomy too. WRONG. Viability is purely negative feedback, not autonomous. Only Vitality has autonomy. This round corrects that.
+Correcting the dual-dual structure: remove super-conscious/conscious/sub-conscious mapping, replace with correct dual-laws model (Type 1 continuous base-level / Type 2 discrete index-sequence).
 
 ---
 
-## Iteration 1 (Tasks 0-2)
-Completed: 2026-02-07
+## Iteration 1 — 2026-02-07
 
-### Task 0: Read and locate autonomy/viability discussions
-Read both Vitality3.md and Vitality3.tex. Located problematic sections:
-- §1.3 Definition of Autonomy (lines 37-39 .md, lines 67-70 .tex)
-- §5.4 Clarifying Autonomy (lines 245-260 .md, lines 303-318 .tex)
+### Task 0: Read current §1.6 and check for other dual-dual references
+**Status**: Complete
 
-Both sections wrongly characterized viability as "the first sense of autonomy." This contradicts the correction requirement.
+Read Vitality3.md and Vitality3.tex. Found §1.6 "The Dual-Dual Structure" incorrectly described the second duality as a three-layered architecture (super-conscious/conscious/sub-conscious) rather than the dual-laws model. All references to the dual-dual structure were contained in §1.6 only.
 
-### Task 1: Fix autonomy framing
-**§1.3 Definition of Autonomy** — Replaced two-senses framing with correct distinction:
-- OLD: "Autonomy operates in two senses: (1) viability maintains organism, (2) E-P oscillator is autonomous"
-- NEW: "Viability is purely negative feedback (reactive, NOT autonomous). Only the E-P oscillator has genuine autonomy (self-generated movement via coupled positive-negative feedback)."
-- Added: "Viability keeps you alive. Vitality makes you autonomous."
+### Task 1: Rewrite §1.6 with correct dual-dual structure
+**Status**: Complete
 
-**§5.4 Clarifying Autonomy** — Same correction pattern:
-- OLD: "Autonomy operates in two senses: viability-autonomy and play-autonomy"
-- NEW: "Autonomy distinguishes from viability. Viability = purely negative feedback (not autonomous). E-P oscillator = genuine autonomy."
-- Emphasized: "A thermostat is viable" but not autonomous. "Viability requires external perturbation." Only the E-P oscillator generates self-movement.
+Rewrote §1.6 in both .md and .tex files with the correct structure:
 
-Both files (.md and .tex) updated in sync.
+**First duality**: E-P dialectic (bidirectional engagement oscillation) — unchanged, already correct.
 
-### Task 2: Final coherence pass
-- Grepped for all "viab" occurrences — confirmed only corrected characterizations remain
-- Grepped for "autonom.*viab" patterns — confirmed no wrong framings
-- Read §1.3 in both files — perfect sync
-- Read §5.4 in both files — perfect sync
-- Verified flowing prose throughout (no bullets introduced)
+**Second duality**: Dual-laws model (Ohmura et al.) — completely rewritten to explain:
+- Supervenience level (symbolic/index layer): Type 2 processing, discrete modification of index sequences that determine which equations are active
+- Base level (neuronal/dynamics layer): Type 1 processing, continuous adjustment of neural states to satisfy supervenient equations
+- Key insight: feedback error reduced independently by both levels operating on the same signal through orthogonal degrees of freedom
+- Maps onto dual process theory: Type 1 = continuous base-level, Type 2 = discrete index-sequence
 
-**Result:** The autonomy/viability distinction is now correct throughout both files. Viability is purely negative feedback control (reactive, not autonomous). Vitality (the E-P oscillator) is genuine autonomy (self-generated developmental dynamics).
+**Then**: Triadic observation added as a consequence, not primary framing — the three-layer phenomenology (super-conscious IM / conscious symbolic / sub-conscious neuronal) emerges from the dual-laws structure but is not the formal principle itself.
+
+### Task 2: Check rest of paper for old three-layer framing
+**Status**: Complete
+
+Used grep to search for all references to "dual-dual", "three-layer", "super-conscious", "conscious layer", "sub-conscious", "Type 1", "Type 2", "index sequence", "supervenience level", "base level" throughout the paper. All references were contained in §1.6, which has now been corrected. No other sections needed changes.
+
+### Task 3: Final pass — coherence, flow, .md/.tex sync
+**Status**: Complete
+
+Verified both files are in sync. The new §1.6 flows well with flowing prose (not bullets) and maintains the colloquial internal paper tone. The dual-laws model is now the primary framing, with the triadic observation correctly positioned as a consequence.
+
+---
+
+## Summary
+
+Round 4 complete. The dual-dual structure in §1.6 now correctly presents:
+1. E-P dialectic (first duality)
+2. Dual-laws model with Type 1/Type 2 processing (second duality)
+3. Triadic phenomenology as a consequence of the dual-laws structure
+
+Files updated: Vitality3.md and Vitality3.tex (kept in sync per CLAUDE.md instructions).
+
+---
+
+## Iteration 2 — 2026-02-07
+
+### Task: Add Type 2 / language remark to §1.6
+**Status**: Complete
+
+Added a remark after the dual-process theory mapping (line 72 in .md, line 106 in .tex) explaining that:
+- Both Type 1 and Type 2 are incorporated in the dual-laws model
+- Type 2 likely exists in non-human organisms
+- Type 2 may become particularly advanced in organisms with sophisticated linguistic capacities (humans being the clearest case)
+- Language itself is an index system, and the capacity for discrete symbolic recombination that enables language may be the same capacity that drives Type 2 processing
+
+This clarifies that Type 2 is not uniquely human but that its linguistic sophistication may be tied to discrete symbolic capacities. Woven naturally into flowing prose. Both .md and .tex kept in sync.
