@@ -47,6 +47,8 @@ The symbolic capacity couples naturally to the dynamic capacity. Active probing 
 
 Result: open-ended growth without external rewards or hand-designed curricula.
 
+Symbolic abstraction is *interiorization* — the world's causal structure is taken inward and consolidated as reusable representational inventory. Projection is *exteriorization* — internal symbolic structure is cast back outward as new control targets, reshaping how the agent engages with the world. The developmental loop is this rhythm of interiorization and exteriorization, each feeding the other.
+
 ### 1.5 The Dual-Dual Structure
 
 The two capacities generate a dual-dual architecture. The first duality is dialectical: E and P are mutually regulating opposites whose oscillation constitutes the developmental dynamic. The second is the dual-laws model (Ohmura et al.): feedback error is independently reducible at two levels: by changing weights or executing actions at the base level, or by changing the mathematical structure of the equations themselves — augmenting the relationships between the indices — at the supervenience level. Together these produce a natural three-layer phenomenology.
