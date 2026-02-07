@@ -40,8 +40,7 @@ The oscillatory structure is straightforward: perturb the world, observe the res
 
 ### 1.5 Second Capacity: Symbolic Abstraction
 
-Consider pretend play: a child picks up a stick and calls it a sword. The operation is abstract the functional role, map it onto a novel substrate, operate on the abstraction. This is symbolic computation in its most basic form: extract structural invariants from experience, recombine them in novel configurations. Piaget called this accommodation leading to assimilation at higher levels.
-
+Consider pretend play: a child picks up a stick and calls it a sword. The operation is abstract the functional role, map it onto a novel substrate, operate on the abstraction. This is symbolic computation in its most basic form: extract structural invariants from experience, recombine them in novel configurations.
 The symbolic capacity couples naturally to the dynamic capacity. Active probing discovers transformation-invariant features. Once extracted, these symbols become new control targets. For example, once a child abstracts "tool," they begin seeking control over tool-use at this higher level of abstraction, not just control over individual graspable objects.
 
 ### 1.6 The Developmental Loop
