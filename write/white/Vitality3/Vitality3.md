@@ -32,8 +32,6 @@ Klopf (1982) observed that classical cybernetics — Wiener, Ashby — built a s
 
 Sepulchre (2022) showed that robust adaptive systems require both positive and negative feedback coupled together. Negative feedback alone converges to a fixed point. Positive feedback alone explodes. Development, learning, and play all require both, coupled.
 
-The connection to empowerment and plasticity is direct. Empowerment is positive feedback: self-amplifying, extending influence outward. Plasticity is negative feedback: self-regulating, accommodating perturbation inward. Vitality is the regime where both are active and coupled.
-
 **Definition (Autonomy).** Autonomy is self-regulation AND self-amplification (homeostasis + heterostasis) operating together as a coupled system. This is not viability. Viability — the maintenance of organismic integrity through negative feedback alone — is purely reactive. A thermostat is viable. Viability requires outside perturbation to produce any behavior; it is self-regulating but not self-amplifying. It keeps you alive but does not generate its own movement.
 
 Genuine autonomy requires both directions coupled. The E–P oscillator exhibits this: when empowerment and plasticity are coupled as a Turing-style dynamical system, the system self-regulates (E regulates P, P regulates E) and self-amplifies (each enhances the other's growth). The oscillator generates its own developmental dynamics without requiring external perturbation. Vitality is this autonomous regime: the E–P engine sustains itself through bidirectional co-regulation, producing self-generated movement. Viability keeps you alive. Vitality makes you autonomous.
