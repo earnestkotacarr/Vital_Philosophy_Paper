@@ -81,7 +81,7 @@ The convergence is striking. Sepulchre's control-across-scales work demands this
 
 ![Model of Agency (Evolution). Each agent has internal structure: Vitality drives schema selection over macro–micro dynamics coupled to the environment. Evolution operates through both external selection (environmental fitness, natural selection) and internal selection (intrinsically defined functionality and pragmatics — Piaget's organic selection).](figures/Vitality_Evolution.png)
 
-This reconciles the tension between selection mechanisms and the generation of cybernetic structures highlighted by Deacon. Between agents, symbolic exchange occurs through lateral gene transfer and cybernetic mimesis — social structural influences that sit alongside Darwinian selection as mechanisms for transmitting and transforming representational structure. The model highlights the subtle nuance required in separating external selection — natural selection, necessity as the mother of invention — from an internal drive — foregrounding the agential turn in evo-devo (Walsh). This elucidates the tendency toward viability-based modelling and the insufficiency of crude mechanisms like genetic algorithms in capturing the creative potency of living systems. Cybernetic mimesis, like lateral gene transfer, is a mechanism for horizontal transmission of representational structure between agents — not vertical inheritance through selection, but direct exchange and transformation of symbolic material.
+This reconciles the tension between selection mechanisms and the generation of cybernetic structures highlighted by Deacon. Between agents, symbolic exchange occurs through lateral gene transfer and cybernetic mimesis — social structural influences that sit alongside Darwinian selection as mechanisms for transmitting and transforming representational structure. The model highlights the subtle nuance required in separating external selection — natural selection, necessity as the mother of invention — from an internal drive — foregrounding the agential turn in evo-devo (Walsh 2015). This elucidates the tendency toward viability-based modelling and the insufficiency of crude mechanisms like genetic algorithms in capturing the creative potency of living systems. Cybernetic mimesis, like lateral gene transfer, is a mechanism for horizontal transmission of representational structure between agents — not vertical inheritance through selection, but direct exchange and transformation of symbolic material.
 
 ---
 
@@ -360,5 +360,7 @@ Song, J. & Ermon, S. (2020). Understanding the Limitations of Variational Mutual
 Trevarthen, C. (1979). Communication and Cooperation in Early Infancy. In *Before Speech*. Cambridge University Press.
 
 van den Oord, A., et al. (2017). Neural Discrete Representation Learning. *NeurIPS*.
+
+Walsh, D.M. (2015). *Organisms, Agency, and Evolution*. Cambridge University Press.
 
 Yiu, E., et al. (2025). Empowerment Gain and Causal Model Construction. *Philosophical Transactions of the Royal Society A*.
