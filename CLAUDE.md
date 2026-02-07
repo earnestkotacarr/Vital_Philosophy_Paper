@@ -2,7 +2,7 @@
 
 ## Critical: Keep Files in Sync
 
-When editing `Vital_Philosophy.md`, **always** update `Vital_Philosophy.tex` with the same changes. The markdown and LaTeX files must stay synchronized.
+When editing files in `write/philosophy/`, **always** keep the `.md` and `.tex` versions in sync. For example, changes to `write/philosophy/Vital_Philosophy.md` must also be applied to `write/philosophy/Vital_Philosophy.tex`.
 
 - Abstract changes → update both files
 - Section changes → update both files

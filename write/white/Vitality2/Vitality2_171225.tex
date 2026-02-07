@@ -1,0 +1,365 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\newcommand{\Ecal}{\mathcal{E}}
+\newcommand{\Pcal}{\mathcal{P}}
+\newcommand{\Xspace}{\mathcal{X}}
+\newcommand{\Emp}{\mathfrak{E}}
+\newcommand{\Plas}{\mathfrak{P}}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\title{Vitality as an Information-Theoretic Criterion for Lifelikeness\\(Version 2)}
+\date{December 16, 2025}
+\author{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\textit{``Yes, you're alive. But are you truly living?''}
+\end{center}
+
+\bigskip
+
+Most formal approaches to ``life-likeness'' begin from \textit{viability}: living systems strive to keep themselves within regimes that sustain their ongoing existence---homeostasis, survivable ranges, adaptive fitness under natural selection. (Source 1: watch youtube video) This sits comfortably with a Darwinian picture in which organisms in the heat of struggle are primarily in the business of not dying.
+
+But this perspective quietly undermines many of our deepest intuitions about what it means to be alive. It says little about how it feels to be alive, or why so much of living behavior---play, exploration, art, gratuitous complexity---seems to exceed mere survival. A sedated patient on life support is viable. A remote-controlled robot can be kept ``safe'' indefinitely. All of these satisfy viability in a thin sense, yet none fully match our intuition of living.
+
+In this white paper we propose \textit{Vitality} as an information-theoretic refinement of lifelikeness. We distinguish:
+\begin{itemize}
+  \item \textbf{Viability} as a purely set-based property: a system remains within a region of state space in which it continues to be ``the same system''.
+  \item \textbf{Vitality} as its dual: given that viable region, how the system organizes its sensorimotor degrees of freedom \textit{over time}.
+\end{itemize}
+
+In this sense, Viability tells us where a system can remain to remain being a system. Vitality tells us whether, within that region, it is truly living.
+
+\bigskip
+
+\textbf{Connection to Version 1.} Version 1 defined Vitality as a static bidirectional score derived from empowerment and plasticity under an NTIC gate. Version 2 keeps the same primitives (viability, Abel-style empowerment/plasticity, NTIC), but sharpens the mechanism: empowerment and plasticity are treated as \textit{signals} that can be \textit{internalized} into slow temporal morphogens $(\Ecal_t, \Pcal_t)$, giving Vitality a genuinely dynamical phenotype and a first-person timescale. NTIC is retained, but only as a \textbf{third-person sanity check} that excludes caves/puppets.
+
+%% ----------------------------------------------------------------
+\section{Introduction: From Viability to Vitality}
+
+\begin{itemize}
+  \item Problem: ``Staying alive'' (viability) is not enough to capture \textit{lifelikeness}.
+  \item Key idea:
+    \begin{itemize}[label={--}]
+      \item \textbf{Viability}: where the system may remain to remain \textit{being that system}.
+      \item \textbf{Vitality}: how the system uses its viable degrees of freedom \textit{over time}.
+    \end{itemize}
+  \item Aim: give a \textbf{rigorous, information-theoretic criterion for lifelikeness}.
+  \item Core contribution (Version 2):
+    \begin{itemize}[label={--}]
+      \item Lifelike agents are those that are viable and exhibit a \textbf{high-Vitality temporal regime} in which interface empowerment and plasticity are internalized into slow morphogens $(\Ecal_t, \Pcal_t)$ that regulate the fast loop, and the resulting dynamics pass an \textbf{NTIC audit} (non-trivial closure), excluding simulator/puppet solutions.
+    \end{itemize}
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Formal Setup}
+
+\begin{itemize}
+  \item State space $\Xspace$; joint state $X_t \in \Xspace$.
+  \item Partition into:
+    \begin{itemize}[label={--}]
+      \item Internal state $Y_t$,
+      \item World state $W_t$ \quad (we use $W$ to avoid collision with empowerment $E$).
+    \end{itemize}
+  \item Interface $\lambda$:
+    \begin{itemize}[label={--}]
+      \item Action process $A_{1:T}$,
+      \item Observation process $O_{1:T}$.
+    \end{itemize}
+  \item Policies / closed-loop dynamics $\pi$ inducing trajectory distributions.
+\end{itemize}
+
+We keep this section short and notational.
+
+%% ----------------------------------------------------------------
+\section{Viability: Purely Set-Based}
+
+\begin{itemize}
+  \item \textbf{Definition (Viability kernel).}
+    \begin{itemize}[label={--}]
+      \item $K \subseteq \Xspace$: set of states in which the system still ``is itself''.
+    \end{itemize}
+  \item \textbf{Definition (Finite-horizon viability).}
+    \begin{itemize}[label={--}]
+      \item $\mathrm{Viab}_T(\pi) := \Pr_\pi[X_t \in K \;\forall t \leq T]$.
+    \end{itemize}
+  \item Emphasize:
+    \begin{itemize}[label={--}]
+      \item Viability is \textbf{purely set-based} and constrains \textbf{where} trajectories may remain.
+      \item It does not care how behavior is organized: babysitting, puppetry, or autonomy all look identical if they stay inside $K$.
+    \end{itemize}
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Interface Capacities: Empowerment and Plasticity (Abel)}
+
+\begin{itemize}
+  \item At interface $\lambda$ (time-local / horizon-local estimates):
+    \begin{itemize}[label={--}]
+      \item \textbf{Empowerment}
+        \[
+          E_t(\lambda) := I(A \leadsto O;\, \lambda)_t
+        \]
+        capacity for actions to influence near-future observations.
+      \item \textbf{Plasticity}
+        \[
+          P_t(\lambda) := I(O \leadsto A;\, \lambda)_t
+        \]
+        capacity for observations to reshape near-future actions.
+    \end{itemize}
+  \item Abel-style tradeoff geometry:
+    \begin{itemize}[label={--}]
+      \item There exists $m_t(\lambda)$ with
+        \[
+          0 \leq E_t(\lambda),\; P_t(\lambda) \leq m_t(\lambda), \quad E_t(\lambda) + P_t(\lambda) \leq m_t(\lambda).
+        \]
+    \end{itemize}
+\end{itemize}
+
+% Note: Figure 1 showing Plasticity/Empowerment diagram and Theorem 4.8 triangle
+% is omitted here; include the figure file if available.
+%
+% \begin{figure}[ht]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{figure1.pdf}
+%   \caption{Interface capacities $E_t(\lambda)$ (empowerment) and $P_t(\lambda)$ (plasticity) as mirror quantities (left), and the tight upper bound on their joint values (right). Values of $E_t(\lambda)$ and $P_t(\lambda)$ from zero up to an interface- and interval-dependent constant $m_t(\lambda)$ are realizable, but their sum can be no greater than $m_t(\lambda)$, illustrating Abel's bidirectional tradeoff geometry.}
+%   \label{fig:abel}
+% \end{figure}
+
+\begin{itemize}
+  \item Interpretation:
+    \begin{itemize}[label={--}]
+      \item Defines the \textbf{bidirectional capacity geometry} at the interface.
+      \item Empowerment-only principles constrain only one axis.
+    \end{itemize}
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Internal Time: Temporal Morphogens of Empowerment and Plasticity}
+
+Version 2 introduces one minimal internalization step: the interface capacities become slow internal morphogens.
+
+\subsection{Internalization (definition)}
+
+\begin{itemize}
+  \item Define temporal morphogens as slow internalizations:
+    \[
+      \Ecal_{t+1} = (1 - \alpha_E)\Ecal_t + \alpha_E\, E_t(\lambda), \qquad
+      \Pcal_{t+1} = (1 - \alpha_P)\Pcal_t + \alpha_P\, P_t(\lambda).
+    \]
+  \item Intuition:
+    \begin{itemize}[label={--}]
+      \item $\Ecal_t$: consolidated empowerment (internal ``commitment/skill'' regulator).
+      \item $\Pcal_t$: consolidated plasticity (internal ``reconfigurability'' regulator).
+    \end{itemize}
+  \item We do not replace Abel's quantities; we \textbf{internalize} them.
+\end{itemize}
+
+\subsection{First-person time (explicit)}
+
+\begin{itemize}
+  \item Third-person time indexes events by $t$.
+  \item First-person time is carried by internal regulatory state: the agent's ``present'' is its current morphogen configuration $(\Ecal_t, \Pcal_t)$, which persists across moments and shapes how the next moment is met.
+  \item The intrinsic integration horizons are set by $\alpha_E, \alpha_P$: smaller $\alpha$ implies longer persistence (a longer lived timescale).
+\end{itemize}
+
+\subsection{Fast-loop modulation (no new state variables)}
+
+\begin{itemize}
+  \item The morphogens modulate the fast loop (control + learning) by gating stability vs rewrite:
+    \[
+      \text{rewrite/adaptation strength at time } t \propto f(\Pcal_t), \qquad
+      \text{stability/precision at time } t \propto g(\Ecal_t).
+    \]
+\end{itemize}
+
+\subsection{Minimal asymmetry (slow-to-recruit, fast-to-act)}
+
+\begin{itemize}
+  \item To capture ``slow-to-recruit but fast-to-act'' without adding states:
+    \begin{itemize}[label={--}]
+      \item assume $\alpha_P \ll \alpha_E$ (plasticity internalization is slower),
+      \item but $f(\Pcal_t)$ can act strongly when $\Pcal_t$ is high.
+    \end{itemize}
+  \item This supports plateau--burst alternations in time (an ``animated'' temporal pattern) without requiring a separate dynamical system.
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Dynamic Vitality}
+
+\subsection{Conceptual Definition}
+
+\begin{itemize}
+  \item \textbf{Viability}: ``You remain in $K$ so you remain \textit{a system}.''
+  \item \textbf{Vitality}: ``Given that you remain in $K$, you organize your degrees of freedom so that:
+    \begin{itemize}[label={--}]
+      \item you strongly influence future inputs (high $\Ecal_t$),
+      \item you remain strongly reconfigurable by those inputs (high $\Pcal_t$),
+      \item and you sustain this bidirectionality as a temporal regime.''
+    \end{itemize}
+\end{itemize}
+
+\subsection{Formal Vitality Measure (time-local)}
+
+\begin{itemize}
+  \item \textbf{Definition (time-local Vitality at interface $\lambda$).}
+    \[
+      V_t(\lambda) := \frac{2\,\Ecal_t\,\Pcal_t}{\Ecal_t + \Pcal_t}.
+    \]
+  \item Properties:
+    \begin{itemize}[label={--}]
+      \item Requires \textbf{both} $\Ecal_t$ and $\Pcal_t$ (bidirectionality).
+      \item Symmetric in $\Ecal_t$ and $\Pcal_t$, monotone in each.
+      \item Penalizes extremes (rigidity or rewrite-soup): high Vitality favors sustained \textit{bidirectional} coupling.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Vitality Over a Horizon}
+
+\begin{itemize}
+  \item \textbf{Definition (horizon-averaged Vitality).}
+    \[
+      \bar{V}_T(\lambda) := \frac{1}{T}\sum_{t=1}^{T} V_t(\lambda).
+    \]
+  \item Vitality is not a one-shot score; it is the characteristic time-pattern of sustained bidirectional coupling.
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Non-Trivial Information Closure (NTIC) as a Third-Person Audit}
+
+NTIC is retained to exclude trivial solutions (caves/puppets), but Version 2 is explicit: NTIC is generally \textbf{not directly computable by the organism} (it lacks a god's-eye view of $W_t$ and the ``true boundary''). Therefore, NTIC is treated as an \textbf{observer-level sanity check} on the resulting dynamics, not as a term the agent must explicitly optimize.
+
+\subsection{Information Flow (diagnostic ingredient)}
+
+\begin{itemize}
+  \item Information flow into the internal state:
+    \[
+      J(W \to Y)_t := I(W_t;\, Y_{t+1} \mid Y_t).
+    \]
+  \item Low $J$ can indicate closure, but closure can be trivial; hence the need for NTIC.
+\end{itemize}
+
+\subsection{NTIC Index (auditable, not necessarily endogenous)}
+
+\begin{itemize}
+  \item Introduce a scalar diagnostic:
+    \[
+      \mathrm{NTIC}_t(\lambda) \in [0, 1],
+    \]
+    interpreted as:
+    \begin{itemize}[label={--}]
+      \item $\mathrm{NTIC}_t \approx 0$: trivial closure (isolation, puppetry, simulator caves).
+      \item $\mathrm{NTIC}_t \approx 1$: non-trivial closure (internal dynamics carry world-structure in a causally efficacious way).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Remark: Exogenous vs Endogenous Adaptation (fairness to empowerment)}
+
+\begin{itemize}
+  \item Many empowerment-based systems \textit{do} update their controllers over time; however, this often constitutes \textbf{exogenous adaptation}---learning dynamics specified and scheduled from outside the agent (optimizer choice, learning-rate schedules, training curricula, external stopping criteria). In such cases, adaptation is something that \textit{happens to} the system.
+  \item Version 2 instead emphasizes \textbf{endogenous, internalized plasticity}: a slow morphogen $\Pcal_t$ that the agent carries as part of its state and that actively gates \textbf{when} and \textbf{how strongly} the system reconfigures itself. In this sense, $\Pcal_t$ is not merely ``learning,'' but \textbf{active adaptation}---a self-regulated alternation between consolidation and rewrite.
+\end{itemize}
+
+\subsection{Proposition: Internalized Plasticity is Required for an NTIC-Asymptote}
+
+\begin{itemize}
+  \item \textbf{Proposition (internalized plasticity required for NTIC-asymptote).} In generic non-stationary settings (or when the initial internal organization is mis-specified), empowerment-driven control with only exogenous adaptation can sustain or even maximize control while failing to show a reliable upward tendency in NTIC under third-person audit. By contrast, systems possessing \textbf{internalized plasticity} $\Pcal_t > 0$---especially when recruited intermittently as a slow-to-recruit / fast-to-act morphogen---can \textit{construct} internal organization over developmental time and thereby exhibit an NTIC tendency (increasing or sustained-high NTIC under audit).
+  \item This frames $\mathcal{P}$ as the ``construction lever'' for autonomy: it is what allows closure to be earned rather than assumed.
+  \item \textbf{Corollary (empowerment-only pathologies).} Empowerment-only optimization admits attractors compatible with \textit{trivial} closure: stable caves, rigid sensorimotor loops, and other regimes that score high on control but do not internalize world-structure into causally efficacious internal dynamics. Therefore, high empowerment alone does not imply non-trivial closure.
+\end{itemize}
+
+\subsection{NTIC as a Tendency (criterion, not objective)}
+
+\begin{itemize}
+  \item When we say NTIC is a \textbf{tendency}, we mean a property of the observed trajectory/regime (audited externally), e.g.:
+    \[
+      \mathbb{E}[\mathrm{NTIC}_{t+1}] \gtrsim \mathbb{E}[\mathrm{NTIC}_t] \quad \text{over developmental time.}
+    \]
+  \item Or, more minimally:
+    \[
+      \frac{1}{T}\sum_{t=1}^{T} \mathrm{NTIC}_t(\lambda) \geq \tau \quad \text{for some threshold } \tau > 0.
+    \]
+  \item Either way, NTIC is not ``part of the instantaneous Vitality function''; it is a \textbf{regime-level audit}.
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Co-Regulation of Empowerment and Plasticity (Dynamic Regime)}
+
+\subsection{Empowerment Regulated by Plasticity}
+
+\begin{itemize}
+  \item In non-stationary environments:
+    \begin{itemize}[label={--}]
+      \item Without sufficient reconfiguration capacity, empowered coupling collapses or retreats into trivial niches.
+    \end{itemize}
+  \item \textbf{Claim}: sustained high $\Ecal_t$ over time typically requires intermittent recruitment of $\Pcal_t$.
+\end{itemize}
+
+\subsection{Plasticity Regulated by Empowerment}
+
+\begin{itemize}
+  \item Without empowered coupling:
+    \begin{itemize}[label={--}]
+      \item plasticity becomes \textbf{overwrite} by the world (puppetry-like dependence).
+    \end{itemize}
+  \item With empowered coupling:
+    \begin{itemize}[label={--}]
+      \item plasticity can become \textbf{self-directed restructuring} rather than overwrite.
+    \end{itemize}
+  \item \textbf{Claim}: non-degenerate $\Pcal_t$ typically requires positive $\Ecal_t$.
+\end{itemize}
+
+\subsection{Lifelikeness (informal definition, crisp)}
+
+\begin{itemize}
+  \item A system is lifelike over horizon $T$ iff:
+    \begin{itemize}[label={--}]
+      \item it is viable (stays in $K$),
+      \item it operates in a high-$\bar{V}_T$ regime,
+      \item and it passes a non-triviality audit via NTIC (e.g., average NTIC above threshold and/or improving tendency).
+    \end{itemize}
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Pathologies and Exclusions by Construction}
+
+\begin{itemize}
+  \item \textbf{Simulator caves / bright dark rooms}: may show strong internal regularities and even high control, but fail the NTIC audit (trivial closure).
+  \item \textbf{Puppet embodiments}: action--observation influence may be present at the body level, but internal closure is externally driven; NTIC audit fails.
+  \item \textbf{Frozen agents}: $\Pcal_t \to 0 \Rightarrow V_t(\lambda) \to 0$ (loss of reconfigurability).
+  \item \textbf{Rewrite-soup agents}: $\Ecal_t \to 0 \Rightarrow V_t(\lambda) \to 0$ (loss of stable empowered coupling).
+  \item These illustrate why \textbf{viability $+$ empowerment} are strictly weaker than \textbf{Vitality $+$ NTIC audit}.
+\end{itemize}
+
+%% ----------------------------------------------------------------
+\section{Discussion}
+
+\begin{itemize}
+  \item What changed from Version 1 (minimally):
+    \begin{itemize}[label={--}]
+      \item Vitality remains built from empowerment and plasticity via the same harmonic-mean intuition.
+      \item The only added structure is internalization: $(E_t, P_t)$ at the interface become morphogens $(\Ecal_t, \Pcal_t)$ that constitute first-person time and regulate the fast loop.
+      \item NTIC remains essential, but is clarified as an \textbf{observer-level audit}, not an agent-side computed term.
+      \item Version 2 adds a testable novelty: \textbf{internalized plasticity enables an NTIC-asymptote}, while empowerment-only optimization admits trivial-closure pathologies.
+    \end{itemize}
+  \item Why it matters:
+    \begin{itemize}[label={--}]
+      \item preserves the parsimony needed for formalization,
+      \item captures vitality as a temporal phenotype rather than a static number,
+      \item keeps the ``no caves / no puppets'' exclusion principle without bloating the agent's internal machinery.
+    \end{itemize}
+\end{itemize}
+
+\end{document}
