@@ -1,6 +1,6 @@
-# Vitality as a Formal Theory of Play: Dynamic Engagement and Symbolic Abstraction as Dual Capacities of Autonomous Development
+# Vitality as the Mechanization of Play: The Dual Capacities of Dynamic Engagement and Symbolic Abstraction
 
-**Version 3 — Draft**
+**Version 3**
 
 *"The creation of something new is not accomplished by the intellect but by the play instinct acting from inner necessity. The creative mind plays with the objects it loves." — C.G. Jung*
 
