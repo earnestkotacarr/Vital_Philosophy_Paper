@@ -255,7 +255,7 @@ Genuine autonomy requires the E–P oscillator. When empowerment and plasticity 
 
 Vitality is this autonomous regime. The E–P oscillator sustains itself through bidirectional co-regulation. $V_t$ measures the strength of this regime, but vitality itself is the pattern of E–P co-regulation, not the score. Viability keeps you alive. Vitality makes you autonomous.
 
-The convergence is striking. Sepulchre's control-across-scales work demands this dual structure. Klopf diagnosed its absence in cybernetics. Play provides it naturally: a regime where self-regulation and self-amplification are co-constitutive, not in tension.
+The convergence is striking. Sepulchre's control-across-scales work demands this dual structure. Klopf diagnosed its absence in cybernetics. Play provides it naturally: a regime where self-regulation and self-amplification are co-constitutive.
 
 ---
 
