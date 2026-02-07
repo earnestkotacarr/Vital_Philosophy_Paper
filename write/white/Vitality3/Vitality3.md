@@ -20,7 +20,7 @@ Play appears across species wherever nervous systems support flexible behavior. 
 
 ![Developmental psychology describes how infants explore, grow through cognitive stages, and learn social skills. Developmental robotics builds embodied agents that implement candidate learning mechanisms. Combined through play, accurate descriptions guide construction — and construction tests descriptions. We also intend to add folk psychology — including both religion and philosophy — as informing developmental psychology alongside the origin of life.](figures/describe_build.png)
 
-This is not merely a metaphor. When we say play is the mother of all values, we mean it mechanistically: play exhibits a specific architecture — two complementary capacities in a self-sustaining loop — that generates open-ended development without external reward signals. What follows is a mechanization of play — a formal account of its two capacities and the architecture they generate.
+This is not merely a metaphor. When we say play is the mother of all values, we mean it mechanistically: play exhibits a specific architecture — two complementary capacities in a self-sustaining loop — that generates open-ended development without external reward signals. What follows after a brief overview of our synthetic multidisciplinary approach to going beyond optimization methods to developmental mechanism is a mechanization of play — a formal account of its two capacities and the architecture they generate.
 
 ### 1.2 First Capacity: Dynamic Bidirectional Engagement
 
