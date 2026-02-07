@@ -16,59 +16,31 @@ We propose Vitality as a formal theory of autonomous development grounded in pla
 
 ### 1.1 Observation: Play Is Not Recreation
 
-- Play appears across species wherever nervous systems support flexible behavior.
-- Evidence:
-  - Piaget: play central to cognitive construction.
-  - Trevarthen: intersubjective play founds social cognition.
-  - Panksepp: dedicated neural circuitry irreducible to other motivational systems.
-- Play has *structure*: not random exploration, but a regime characterized by two complementary capacities.
+Play appears across species wherever nervous systems support flexible behavior. The evidence is compelling: Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities.
 
 ### 1.2 First Capacity: Dynamic Bidirectional Engagement
 
-- Behavioral observation (rough-and-tumble play):
-  - Animals oscillate between influence and receptivity.
-  - Pure domination (only pins) → game ends.
-  - Pure submission (only pinned) → game ends.
-  - Game persists ⟺ both oscillate between affecting and being affected.
-- Formalization:
-  - **Affecting** (empowerment): actions reliably influence future observations.
-  - **Being affected** (plasticity): observations reliably reshape future actions.
-- Pathologies:
-  - Pure empowerment → rigidity.
-  - Pure plasticity → puppetry.
-  - Play lives where both are simultaneously high and dynamically balanced.
-- Oscillatory structure: perturb → observe → update → re-perturb.
-- When oscillation collapses → developmental engine stalls.
+Consider rough-and-tumble play: animals oscillate between influence and receptivity. If one player only pins (pure domination), the game ends. If one player is only pinned (pure submission), the game ends. The game persists if and only if both participants oscillate between affecting and being affected.
+
+We formalize this as two complementary capacities. **Affecting** (empowerment) is the capacity for actions to reliably influence future observations. **Being affected** (plasticity) is the capacity for observations to reliably reshape future actions. The pathologies are instructive: pure empowerment leads to rigidity, pure plasticity to puppetry. Play lives where both capacities are simultaneously high and dynamically balanced.
+
+The oscillatory structure is straightforward: perturb the world, observe the result, update your behavior, re-perturb. When this oscillation collapses, the developmental engine stalls.
 
 ### 1.3 Why Both Directions: Klopf's Critique of Cybernetics
 
-- **Klopf (1982)**: Cybernetics (Wiener, Ashby) built a science of *homeostasis* — negative feedback toward set-points.
-- But living systems are also *self-amplifying*: seek stimulation, escalate challenges, pursue novelty.
-- Klopf's *heterostasis*: drive toward more, not back to baseline.
-- **Sepulchre (2022)**: Robust adaptive systems require *both* positive and negative feedback coupled.
-  - Negative feedback only → converges to fixed point.
-  - Positive feedback only → explodes.
-  - Development, learning, play → both coupled.
-- Connection to E–P:
-  - **Empowerment**: positive feedback (self-amplifying, extends influence).
-  - **Plasticity**: negative feedback (self-regulating, accommodates perturbation).
-  - Vitality: regime where both are active and coupled.
+Klopf (1982) observed that classical cybernetics — Wiener, Ashby — built a science of homeostasis, negative feedback toward set-points. But living systems are also self-amplifying: they seek stimulation, escalate challenges, pursue novelty. Klopf called this *heterostasis*, the drive toward more rather than back to baseline.
 
-**Definition (Autonomy).** Autonomy is self-regulation AND self-amplification (homeostasis + heterostasis). An autonomous system maintains itself (viability) while expanding its capacities (vitality).
+Sepulchre (2022) showed that robust adaptive systems require both positive and negative feedback coupled together. Negative feedback alone converges to a fixed point. Positive feedback alone explodes. Development, learning, and play all require both, coupled.
+
+The connection to empowerment and plasticity is direct. Empowerment is positive feedback: self-amplifying, extending influence outward. Plasticity is negative feedback: self-regulating, accommodating perturbation inward. Vitality is the regime where both are active and coupled.
+
+**Definition (Autonomy).** Autonomy is self-regulation AND self-amplification (homeostasis + heterostasis). The self-regulating component maintains viability; the self-amplifying component drives expansion of behavioral repertoire. Vitality is the dynamical regime where these two processes co-regulate each other.
 
 ### 1.4 Second Capacity: Symbolic Abstraction
 
-- Behavioral observation (pretend play):
-  - Child picks up stick, calls it a sword.
-  - Operation: abstract functional role → map onto novel substrate → operate on abstraction.
-- This is symbolic computation:
-  - Extract structural invariants from experience.
-  - Recombine in novel configurations.
-  - Piaget: accommodation → assimilation at higher levels.
-- Coupling to dynamic capacity:
-  - Active probing discovers transformation-invariant features.
-  - Extracted symbols become new control targets.
-  - Example: child abstracts "tool" → seeks control over tool-use at higher abstraction level.
+Consider pretend play: a child picks up a stick and calls it a sword. The operation is abstract the functional role, map it onto a novel substrate, operate on the abstraction. This is symbolic computation in its most basic form: extract structural invariants from experience, recombine them in novel configurations. Piaget called this accommodation leading to assimilation at higher levels.
+
+The symbolic capacity couples naturally to the dynamic capacity. Active probing discovers transformation-invariant features. Once extracted, these symbols become new control targets. For example, once a child abstracts "tool," they begin seeking control over tool-use at this higher level of abstraction, not just control over individual graspable objects.
 
 ### 1.5 The Developmental Loop
 
@@ -87,9 +59,7 @@ Result: open-ended growth without external rewards or hand-designed curricula.
 
 ### 2.1 Setup
 
-- Agent state space: $\mathcal{X}$, partitioned into $Y_t$ (internal) and $W_t$ (world).
-- Interface $\lambda$: actions $A_{1:T}$, observations $O_{1:T}$.
-- Policies $\pi$ induce trajectory distributions.
+We work with an agent whose state space $\mathcal{X}$ is partitioned into internal state $Y_t$ and world state $W_t$. The agent interacts through an interface $\lambda$ consisting of actions $A_{1:T}$ and observations $O_{1:T}$. Policies $\pi$ induce trajectory distributions over this joint space.
 
 ### 2.2 Formalizing Bidirectional Engagement
 
@@ -104,9 +74,11 @@ Channel capacity for observations to reshape future actions.
 **Proposition (Abel Tradeoff).**
 $E_t + P_t \leq m_t(\lambda)$, where $m_t(\lambda)$ is interface-dependent upper bound.
 
-**Definition (Vitality Score, time-local).**
+**Vitality as Co-Regulatory Regime.** Vitality is the Turing-esque dynamical pattern where empowerment and plasticity co-regulate each other: E regulates P (influencing the world shapes what reconfigures you), P regulates E (reconfigurability sustains influence in non-stationary environments). This is a specific behavioral regime, not just a number.
+
+**Definition (Vitality Measure, time-local).**
 $$V_t(\lambda) := \frac{2\,E_t\, P_t}{E_t + P_t}$$
-Harmonic mean: requires both positive, penalizes extremes, maximum at $E_t = P_t$.
+This harmonic mean measures the strength of the co-regulatory regime at time $t$. It requires both E and P positive, penalizes extremes, and reaches maximum when $E_t = P_t$.
 
 ### 2.3 Temporal Morphogens
 
@@ -114,32 +86,15 @@ Harmonic mean: requires both positive, penalizes extremes, maximum at $E_t = P_t
 Interface capacities (fast measurements) internalized as slow state:
 $$\mathcal{E}_{t+1} = (1 - \alpha_E)\mathcal{E}_t + \alpha_E\, E_t(\lambda), \qquad \mathcal{P}_{t+1} = (1 - \alpha_P)\mathcal{P}_t + \alpha_P\, P_t(\lambda)$$
 
-- $\mathcal{E}_t$: slow "skill/commitment" morphogen.
-- $\mathcal{P}_t$: slow "reconfigurability" morphogen.
+Here $\mathcal{E}_t$ is a slow "skill/commitment" morphogen and $\mathcal{P}_t$ is a slow "reconfigurability" morphogen.
 
-**Structure:**
+**Knowledge as self-persisting information.** The morphogens are not merely statistics about past interaction — they are *knowledge* in the constructionist sense. Following Piaget's insight that knowledge is not stored data but self-maintaining structure, we recognize that $\mathcal{E}_t$ and $\mathcal{P}_t$ are the agent's consolidated developmental history, actively maintaining themselves through the E–P loop. They persist not because they are written to memory, but because they regulate the very interactions that regenerate them. This is knowledge as self-persisting information: the morphogens ARE what the agent has learned, and they persist precisely because they shape how the agent continues to engage with the world.
 
-- Fast-loop modulation:
-  $$\text{adaptation strength} \propto f(\mathcal{P}_t), \qquad \text{stability/precision} \propto g(\mathcal{E}_t)$$
-
-- Reaction–diffusion structure:
-  - $\mathcal{E}$: activator (stabilizing).
-  - $\mathcal{P}$: inhibitor (destabilizing).
-  - Different timescales: $\alpha_P \ll \alpha_E$ (slow to recruit, fast to act).
-
-- Result: temporal Turing patterns—alternating plateau (exploit) and burst (explore) phases.
-- Developmental transitions emerge as bifurcations between behavioral regimes.
+**Structure.** The morphogens modulate the fast loop: adaptation strength is proportional to $f(\mathcal{P}_t)$ while stability and precision are proportional to $g(\mathcal{E}_t)$. This creates a reaction–diffusion structure where $\mathcal{E}$ acts as activator (stabilizing) and $\mathcal{P}$ acts as inhibitor (destabilizing). The different timescales — $\alpha_P \ll \alpha_E$, making plasticity slow to recruit but fast to act — produce temporal Turing patterns: alternating plateau phases (exploit, high $\mathcal{E}$, low $\mathcal{P}$) and burst phases (explore, recruited $\mathcal{P}$). Developmental transitions emerge as bifurcations between behavioral regimes.
 
 ### 2.4 Formalizing Symbolic Abstraction
 
-- Given observations $\{o_t\}$ from interaction, learn:
-  - Encoder $\phi: \mathcal{O} \to \mathcal{Z}$.
-  - Factored latent space $\mathcal{Z} = \mathcal{Z}_1 \times \cdots \times \mathcal{Z}_k$.
-
-- Requirements:
-  1. **Group-theoretic decomposition**: each $\mathcal{Z}_i$ transforms independently under subgroup $G_i$.
-  2. **Transformation invariance**: each factor captures structural invariant reusable across contexts.
-  3. **Discretizability**: factors naturally discretizable (finite groups, discrete orbits) → vocabulary of *perceptual symbols*.
+Given observations $\{o_t\}$ from interaction, we learn an encoder $\phi: \mathcal{O} \to \mathcal{Z}$ mapping into a factored latent space $\mathcal{Z} = \mathcal{Z}_1 \times \cdots \times \mathcal{Z}_k$. The requirements are threefold: (1) **group-theoretic decomposition**, where each $\mathcal{Z}_i$ transforms independently under a subgroup $G_i$; (2) **transformation invariance**, where each factor captures a structural invariant reusable across contexts; and (3) **discretizability**, where factors are naturally discretizable (finite groups, discrete orbits), yielding a vocabulary of *perceptual symbols*.
 
 **Definition (Symbolic Inventory).**
 $\mathcal{S}_t = \{(\mathcal{Z}_i, G_i, \phi_i)\}_{i=1}^{k_t}$ grows over development.
@@ -147,16 +102,13 @@ $\mathcal{S}_t = \{(\mathcal{Z}_i, G_i, \phi_i)\}_{i=1}^{k_t}$ grows over develo
 ### 2.5 The Integrated Definition
 
 **Definition (Vitality, Version 3).**
-A system exhibits Vitality over horizon $T$ if:
+A system exhibits Vitality over horizon $T$ if it sustains the E–P co-regulatory regime with the following properties:
 
-1. **High dynamic engagement**: $\bar{V}_T$ sustained above threshold (balanced bidirectional coupling).
-2. **Growing symbolic inventory**: $|\mathcal{S}_T| > |\mathcal{S}_0|$ (reusable abstractions extracted from interaction).
-3. **Loop closure**: learned symbols become E–P substrates (empowerment–plasticity computed over symbolic space, not just raw sensorimotor channels).
+1. **High dynamic engagement**: $\bar{V}_T$ sustained above threshold, indicating strong bidirectional coupling between empowerment and plasticity.
+2. **Growing symbolic inventory**: $|\mathcal{S}_T| > |\mathcal{S}_0|$ (reusable abstractions extracted from the interaction data generated by E–P oscillation).
+3. **Loop closure**: learned symbols become new E–P substrates, so empowerment–plasticity dynamics shift to operate over symbolic space, not just raw sensorimotor channels.
 
-**Distinguishing feature:**
-
-- Condition (3) distinguishes this from "intrinsic motivation + representation learning."
-- The loop closes: symbols recruited into control → generate new interactions → extract further abstractions.
+The distinguishing feature is condition (3). This is not simply "intrinsic motivation + representation learning." The loop closes: symbols are recruited into control, which generates new interactions, which extract further abstractions.
 
 ### 2.6 Pathologies
 
@@ -174,29 +126,17 @@ A system exhibits Vitality over horizon $T$ if:
 
 ### 3.1 For Bidirectional Engagement
 
-- **Abel et al. (2025)**: Plasticity as formal dual of empowerment within generalized directed information.
-  - Channel capacities: forward ($A \to O$) and reverse ($O \to A$).
-  - Tight tradeoff: $E + P \leq m(\lambda)$.
-  - Interface has finite bidirectional capacity; any allocation respects this bound.
-- **Morphogen dynamics**: Internalizing E and P as slow morphogens yields reaction–diffusion structure.
-  - Plateau phase: high $\mathcal{E}$, low $\mathcal{P}$ (exploit).
-  - Burst phase: recruited $\mathcal{P}$ (explore).
-  - Maps directly onto explore–exploit oscillation.
-  - Developmental transitions emerge as bifurcations.
+Abel et al. (2025) formalize plasticity as the dual of empowerment within generalized directed information. They define channel capacities in both directions — forward ($A \to O$) and reverse ($O \to A$) — and prove a tight tradeoff: $E + P \leq m(\lambda)$. The interface has finite bidirectional capacity, and any allocation must respect this bound.
+
+Internalizing E and P as slow morphogens yields reaction–diffusion structure. The plateau phase (high $\mathcal{E}$, low $\mathcal{P}$) corresponds to exploitation. The burst phase (recruited $\mathcal{P}$) corresponds to exploration. This maps directly onto the explore–exploit oscillation familiar from reinforcement learning, but here it emerges from the coupled morphogen dynamics rather than being imposed externally. Developmental transitions emerge as bifurcations in this dynamical system.
 
 ### 3.2 For Symbolic Abstraction
 
-- **Algebraic constraint learning (Ohmura et al.)**:
-  - Biases feature discovery toward group-theoretic decompositions.
-  - Separates conditionally independent transformations.
-  - Features: operationally meaningful, naturally discretizable, composable.
-- **Discrete codebook methods**:
-  - VQ-VAE: discrete latent representations via vector quantization.
-  - Discrete Codebook World Models (Scannell et al. 2025): preserve ordinal relationships.
-  - GFlowNets (Bengio et al. 2023): navigate discrete combinatorial structure with neural guidance.
-- **DreamCoder (Ellis et al. 2021)**:
-  - Bootstraps compositional program libraries through wake-sleep.
-  - Discrete, composable building blocks grow over time.
+The algebraic constraint learning framework (Ohmura et al.) biases feature discovery toward group-theoretic decompositions. It separates conditionally independent transformations, yielding features that are operationally meaningful, naturally discretizable, and composable.
+
+Discrete codebook methods provide complementary techniques. VQ-VAE constructs discrete latent representations via vector quantization. Discrete Codebook World Models (Scannell et al. 2025) preserve ordinal relationships while maintaining discreteness. GFlowNets (Bengio et al. 2023) navigate discrete combinatorial structure with neural guidance, allowing flexible exploration of symbolic spaces.
+
+DreamCoder (Ellis et al. 2021) bootstraps compositional program libraries through wake-sleep cycles. Its discrete, composable building blocks grow over time, providing a model of how symbolic inventories can expand through use.
 
 ### 3.3 For the Integration
 
@@ -204,51 +144,28 @@ The integration of dynamic engagement with symbolic abstraction is the core nove
 
 #### E–P as Selection Pressure for Representation Learning
 
-- **The underdetermination problem in representation learning**:
-  - Unsupervised learning: infinitely many representations compress data equally well.
-  - No principled selection criterion beyond reconstruction error or contrastive loss.
-  - Result: learned features may be statistically optimal but behaviorally useless.
-- **E–P provides the missing selection pressure**:
-  - Feature $z$ is valuable iff it expands *both* $E$ (controllability via $z$) and $P$ (sensitivity to $z$).
-  - This is a *functional* criterion: features must support bidirectional coupling.
-  - Filters out features that compress well but don't enable better engagement.
-- **Formal mechanism**:
-  - At time $t$, agent has symbolic inventory $\mathcal{S}_t = \{z_1, \ldots, z_k\}$.
-  - Compute $E_t(\lambda_z)$ and $P_t(\lambda_z)$ for each symbol $z \in \mathcal{S}_t$ (empowerment/plasticity when controlling/observing $z$).
-  - Features with high $V_t(\lambda_z) = 2E_t(\lambda_z)P_t(\lambda_z)/(E_t(\lambda_z)+P_t(\lambda_z))$ are retained and elaborated.
-  - Features with low $V_t(\lambda_z)$ are pruned or not extracted in the first place.
-  - This implements *developmental filtering*: the dynamic layer shapes what the symbolic layer learns.
+Representation learning suffers from an underdetermination problem: in unsupervised settings, infinitely many representations compress the data equally well. There is no principled selection criterion beyond reconstruction error or contrastive loss. The result is that learned features may be statistically optimal but behaviorally useless.
+
+E–P provides the missing selection pressure. A feature $z$ is valuable if and only if it expands both $E$ (controllability via $z$) and $P$ (sensitivity to $z$). This is a functional criterion: features must support bidirectional coupling. It filters out features that compress well but don't enable better engagement.
+
+The formal mechanism is straightforward. At time $t$, the agent has symbolic inventory $\mathcal{S}_t = \{z_1, \ldots, z_k\}$. For each symbol $z \in \mathcal{S}_t$, compute $E_t(\lambda_z)$ and $P_t(\lambda_z)$ — the empowerment and plasticity available when controlling or observing through $z$. Features with high vitality $V_t(\lambda_z) = 2E_t(\lambda_z)P_t(\lambda_z)/(E_t(\lambda_z)+P_t(\lambda_z))$ are retained and elaborated. Features with low $V_t(\lambda_z)$ are pruned or not extracted in the first place. This implements developmental filtering: the dynamic layer shapes what the symbolic layer learns.
 
 #### Symbols as New E–P Substrates
 
-- **Hierarchical projection**:
-  - Once extracted, symbols $z \in \mathcal{S}_t$ become new control and observation targets.
-  - E–P dynamics shift from sensorimotor space $(A, O)$ to symbolic space $(Z_A, Z_O)$.
-  - Agent now seeks to influence and be influenced at the level of abstractions, not raw percepts.
-- **Example (Piaget-style)**:
-  - Sensorimotor stage: E–P over raw actions (grasp, release) and observations (visual flow, tactile feedback).
-  - Object stage: abstracts "graspable object." Now E–P operates over object-level actions ("grab the cup") and object-level observations ("cup moved").
-  - Relational stage: abstracts "containment." Now E–P operates over relational actions ("put A in B") and relational observations ("A is inside B").
-  - Each level's symbols become the substrate for the next level's E–P oscillation.
-- **Closure of the loop**:
-  - Symbols extracted from E–P data at level $n$ become E–P targets at level $n+1$.
-  - This is *recursive abstraction*: the mechanism that generates symbols also consumes them.
-  - Contrast with static representation learning: features are extracted once and used for downstream tasks, but not fed back into the feature-extraction process itself.
+Once extracted, symbols $z \in \mathcal{S}_t$ become new control and observation targets. The E–P dynamics shift from sensorimotor space $(A, O)$ to symbolic space $(Z_A, Z_O)$. The agent now seeks to influence and be influenced at the level of abstractions, not raw percepts.
+
+A Piaget-style example clarifies this. At the sensorimotor stage, E–P operates over raw actions (grasp, release) and observations (visual flow, tactile feedback). At the object stage, the agent abstracts "graspable object," and E–P now operates over object-level actions ("grab the cup") and object-level observations ("cup moved"). At the relational stage, the agent abstracts "containment," and E–P operates over relational actions ("put A in B") and relational observations ("A is inside B"). Each level's symbols become the substrate for the next level's E–P oscillation.
+
+This closes the loop. Symbols extracted from E–P data at level $n$ become E–P targets at level $n+1$. This is recursive abstraction: the mechanism that generates symbols also consumes them. Contrast this with static representation learning, where features are extracted once and used for downstream tasks but not fed back into the feature-extraction process itself.
 
 #### Hierarchical Developmental Dynamics
 
-- **Developmental trajectory**:
-  $$\text{sensorimotor} \xrightarrow{\text{E–P + abstraction}} \text{object} \xrightarrow{\text{E–P + abstraction}} \text{relational} \xrightarrow{\text{E–P + abstraction}} \text{social}$$
-- At each level $\ell$:
-  - E–P oscillates over current symbolic inventory $\mathcal{S}_\ell$.
-  - Generates interaction data at level $\ell$.
-  - Algebraic constraint learner extracts new symbols $\mathcal{S}_{\ell+1} \supset \mathcal{S}_\ell$.
-  - E–P shifts to operate over $\mathcal{S}_{\ell+1}$.
-- **Emergent curriculum**:
-  - Agent naturally explores near its competence boundary.
-  - High-$V$ regions become new training grounds.
-  - Developmental transitions are bifurcations in the coupled E–P–symbolic system.
-  - No external curriculum needed—the loop generates its own scaffolding.
+The developmental trajectory looks like this:
+$$\text{sensorimotor} \xrightarrow{\text{E–P + abstraction}} \text{object} \xrightarrow{\text{E–P + abstraction}} \text{relational} \xrightarrow{\text{E–P + abstraction}} \text{social}$$
+
+At each level $\ell$, E–P oscillates over the current symbolic inventory $\mathcal{S}_\ell$, generating interaction data at level $\ell$. The algebraic constraint learner extracts new symbols $\mathcal{S}_{\ell+1} \supset \mathcal{S}_\ell$, and E–P shifts to operate over $\mathcal{S}_{\ell+1}$.
+
+This produces an emergent curriculum. The agent naturally explores near its competence boundary. High-$V$ regions become new training grounds. Developmental transitions are bifurcations in the coupled E–P–symbolic system. No external curriculum is needed — the loop generates its own scaffolding.
 
 **Proposition (Integration as Core Novelty).**
 Neither intrinsic motivation alone (empowerment without symbolic extraction) nor representation learning alone (symbolic extraction without intrinsic selection pressure) produces open-ended development. The integration—E–P selects features, features become new E–P substrates—closes the developmental loop.
@@ -257,112 +174,66 @@ Neither intrinsic motivation alone (empowerment without symbolic extraction) nor
 
 ## 4. Problems with These Mechanisms
 
-- The mechanisms in Section 3 are the best we have.
-- They are also structurally limited in ways that *define the research agenda*.
+The mechanisms in Section 3 are the best we have. They are also structurally limited in ways that define the research agenda.
 
 ### 4.1 The Entropic Problem
 
 E and P are mutual information quantities. $V_t$ inherits every limitation of information-theoretic optimization. These are not engineering complaints—they are theorem-level structural limitations.
 
-- **Problem 1: Representation presupposition (Shannon 1949)**.
-  - Computing $I(A \leadsto O)$ requires well-defined random variables and probability spaces.
-  - But choosing the right variables *is* the hard problem.
-  - Shannon explicitly excluded semantics from information theory.
-  - Consequence: information theory assumes the representation problem is already solved.
-  - V3's algebraic learner partially addresses this by providing variables, but the bootstrap remains: initial E–P operates over raw sensorimotor variables whose structure is assumed.
-- **Problem 2: Intractability (McAllester & Stratos 2020, Theorem 1)**.
-  - *Any distribution-free lower bound on MI estimated from $N$ samples cannot be larger than $O(\ln N)$.*
-  - The number of samples required is exponential in the true MI.
-  - For small discrete codebooks this softens (finite sums, Blahut-Arimoto tractable).
-  - But $n$-step empowerment scales as $|A|^n$, and compositional state spaces explode combinatorially.
-  - This is a proven limitation, not a solvable optimization problem.
-- **Problem 3: Structural poverty**.
-  - Entropy collapses all structure into a scalar.
-  - Cannot distinguish algebraic from topological from causal constraints.
-  - $V_t = 2EP/(E+P)$ is a single number—blind to the compositional structure of $\mathcal{S}_t$ that it supposedly governs.
-  - The harmonic mean does not know about the group theory of the symbolic inventory.
-- **Problem 4: Causal blindness (Bareinboim et al. 2022, Causal Hierarchy Theorem)**.
-  - $I(X;Y) = I(Y;X)$ by definition. Mutual information is symmetric.
-  - But causation is directional.
-  - *Causal Hierarchy Theorem: Observational data underdetermines interventional and counterfactual quantities.*
-  - E and P are Layer 1 (associational)—can be inflated by confounders and distributional drift.
-  - Genuine influence and sensitivity require interventional structure, which MI does not capture.
+**Problem 1: Representation presupposition (Shannon 1949).** Computing $I(A \leadsto O)$ requires well-defined random variables and probability spaces. But choosing the right variables is the hard problem. Shannon explicitly excluded semantics from information theory. The consequence is that information theory assumes the representation problem is already solved. V3's algebraic learner partially addresses this by providing variables, but the bootstrap remains: initial E–P must operate over raw sensorimotor variables whose structure is assumed.
+
+**Problem 2: Intractability (McAllester & Stratos 2020, Theorem 1).** Any distribution-free lower bound on MI estimated from $N$ samples cannot be larger than $O(\ln N)$. The number of samples required is exponential in the true MI. For small discrete codebooks this softens (finite sums, Blahut-Arimoto becomes tractable), but $n$-step empowerment scales as $|A|^n$, and compositional state spaces explode combinatorially. This is a proven limitation, not a solvable optimization problem.
+
+**Problem 3: Structural poverty.** Entropy collapses all structure into a scalar. It cannot distinguish algebraic from topological from causal constraints. $V_t = 2EP/(E+P)$ is a single number, blind to the compositional structure of $\mathcal{S}_t$ that it supposedly governs. The harmonic mean does not know about the group theory of the symbolic inventory.
+
+**Problem 4: Causal blindness (Bareinboim et al. 2022, Causal Hierarchy Theorem).** Mutual information is symmetric by definition: $I(X;Y) = I(Y;X)$. But causation is directional. The Causal Hierarchy Theorem states that observational data underdetermines interventional and counterfactual quantities. E and P are Layer 1 (associational) — they can be inflated by confounders and distributional drift. Genuine influence and sensitivity require interventional structure, which MI does not capture.
 
 ### 4.2 The Self-Reinforcing Trap
 
-- **The trap structure**:
-  - Without symbols → stuck with entropy (your only objectives are statistical).
-  - Without non-entropic objectives → no pressure to learn symbols (continuous approximations are always locally sufficient).
-  - The subsymbolic-entropic paradigm is self-reinforcing: it defines both representation and objective in terms that exclude the structures that would reveal its limits.
-- **V3's position**:
-  - V3 attacks both exits—E–P for dynamics, algebraic constraints for symbols.
-  - But the tension between the entropic core (E, P are MI) and the algebraic periphery ($\mathcal{S}_t$ has non-entropic structure) is unresolved.
-  - The harmonic mean does not know about the group theory.
-  - This is not a bug—it points toward what must be built next.
+The trap has two exits, both blocked. Without symbols, you are stuck with entropy — your only objectives are statistical. Without non-entropic objectives, there is no pressure to learn symbols — continuous approximations are always locally sufficient. The subsymbolic-entropic paradigm is self-reinforcing: it defines both representation and objective in terms that exclude the structures that would reveal its limits.
+
+V3 attacks both exits. E–P provides the dynamics, algebraic constraints provide the symbols. But the tension between the entropic core (E and P are mutual information) and the algebraic periphery ($\mathcal{S}_t$ has non-entropic structure) remains unresolved. The harmonic mean does not know about the group theory. This is not a bug. It points toward what must be built next.
 
 ---
 
 ## 5. What Needs to Be Done
 
-- The problems in Section 4 are real and foundational, not engineering complaints.
-- Here is what must be built.
+The problems in Section 4 are real and foundational, not engineering complaints. Here is what must be built.
 
 ### 5.1 A Causal, Computationally Tractable Bidirectional Intrinsic Motivation
 
-- **What E–P gets right**: bidirectional, oscillatory, self-regulating + self-amplifying structure.
-- **What E–P gets wrong**: current realization in mutual information is both causally blind and intractable at scale.
-- **Requirements for successor**:
-  - **Causal**: grounded in interventional quantities ($P(O|\text{do}(A))$ not $P(O|A)$), so influence and sensitivity are genuine, not confounded.
-  - **Computationally tractable**: not requiring exponential samples or variational bounds that change qualitative behavior.
-- **Promising direction**: Gunji and Pegios, "Natural-Born Intelligence as the Invocation of Emotion = Politics"—connects bidirectional engagement to non-information-theoretic quantities that might sidestep the MI trap entirely.
+E–P gets the structure right: bidirectional, oscillatory, self-regulating plus self-amplifying. But the current realization in mutual information is both causally blind and intractable at scale.
+
+The requirements for a successor are clear. It must be causal: grounded in interventional quantities ($P(O|\text{do}(A))$ not $P(O|A)$), so that influence and sensitivity are genuine rather than confounded. And it must be computationally tractable: not requiring exponential samples or variational bounds that change qualitative behavior.
+
+A promising direction is Gunji and Pegios, "Natural-Born Intelligence as the Invocation of Emotion = Politics," which connects bidirectional engagement to non-information-theoretic quantities that might sidestep the MI trap entirely.
 
 ### 5.2 Representation Learning That Does Both Indexing and Feature Extraction
 
-- **Requirements**:
-  - **Indexes** the world into discrete, addressable, manipulable symbols (codebook / vocabulary construction).
-  - **Extracts features** that are transformation-invariant and algebraically structured (not just compressed statistics).
-- **Current methods fail**:
-  - VQ-VAE indexes but doesn't extract algebraic structure.
-  - Ohmura's algebraic constraints extract structure but don't produce an indexed vocabulary.
-- **What's needed**: A system that builds a discrete inventory of structurally meaningful features, where the indexing and the structure are the same thing.
+The requirements are twofold: the system must index the world into discrete, addressable, manipulable symbols (codebook or vocabulary construction), and it must extract features that are transformation-invariant and algebraically structured (not just compressed statistics).
+
+Current methods fail at the intersection. VQ-VAE indexes but doesn't extract algebraic structure. Ohmura's algebraic constraints extract structure but don't produce an indexed vocabulary. What's needed is a system that builds a discrete inventory of structurally meaningful features, where the indexing and the structure are the same thing.
 
 ### 5.3 Integration: Representation Learning Constrained by the Mother-of-All-Valleys Intrinsic Motivation
 
-- **The deepest open problem**.
-- **Requirement**: The dynamic engagement component (E–P, or its causal successor) should function as a *higher-order constraint* on representation learning.
-  - Not just supplying selection pressure for features.
-  - But determining *what kind of representations are worth having in the first place*.
-- **The "mother of all valleys"**: Intrinsic motivation is the master landscape that all representation learning descends into.
-  - Features are valuable not because they compress data.
-  - Not because they reconstruct observations.
-  - But because they expand the agent's capacity for bidirectional engagement with the world.
-- **Constitutive constraint**: Representation learning should be *constitutively constrained* by E–P expansion.
-  - Objective for feature extraction: not reconstruction, not contrastive prediction, but E–P expansion.
-  - The symbolic and dynamic components are not just coupled—they're aspects of a single process.
-  - The agent simultaneously learns *what to attend to* and *how to engage with what it attends to*.
+This is the deepest open problem. The dynamic engagement component — E–P, or its causal successor — should function as a higher-order constraint on representation learning, not just supplying selection pressure for features but determining what kind of representations are worth having in the first place.
+
+Intrinsic motivation is the mother of all valleys, the master landscape that all representation learning descends into. Features are valuable not because they compress data, not because they reconstruct observations, but because they expand the agent's capacity for bidirectional engagement with the world.
+
+Representation learning should be constitutively constrained by E–P expansion. The objective for feature extraction should not be reconstruction or contrastive prediction, but E–P expansion itself. The symbolic and dynamic components are not just coupled — they are aspects of a single process. The agent simultaneously learns what to attend to and how to engage with what it attends to.
 
 ### 5.4 Clarifying Autonomy
 
-- The notion of autonomy underlying all of this must be made explicit.
+The notion of autonomy underlying all of this must be made explicit.
 
 **Definition (Autonomy, explicit).**
 **Autonomy = self-regulation + self-amplification.**
 
-- Not just homeostasis (Wiener/Ashby).
-- Not just heterostasis (Klopf).
-- Both, coupled, in the same system.
+This is not just homeostasis (Wiener, Ashby). Not just heterostasis (Klopf). Both, coupled, in the same system.
 
-**The dual structure:**
+The dual structure is as follows. The self-regulating side (plasticity, negative feedback, accommodation) keeps the system viable. The self-amplifying side (empowerment, positive feedback, assimilation) drives it toward expanded engagement. Vitality is the dynamical regime where both are coupled and co-regulating. $V_t$ measures the strength of this regime, but vitality itself is the pattern of E–P co-regulation, not the score.
 
-- Self-regulating side (plasticity, negative feedback, accommodation) keeps the system viable.
-- Self-amplifying side (empowerment, positive feedback, assimilation) drives it toward expanded engagement.
-- Vitality is the measure of how well both are working.
-
-**Convergence:**
-
-- Sepulchre's control-across-scales work demands this.
-- Klopf diagnosed its absence in cybernetics.
-- Play provides it naturally: a regime where self-regulation and self-amplification are co-constitutive, not in tension.
+The convergence is striking. Sepulchre's control-across-scales work demands this dual structure. Klopf diagnosed its absence in cybernetics. Play provides it naturally: a regime where self-regulation and self-amplification are co-constitutive, not in tension.
 
 ---
 
