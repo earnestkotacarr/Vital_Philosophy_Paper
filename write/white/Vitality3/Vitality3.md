@@ -64,7 +64,7 @@ The two capacities generate a dual-dual architecture. The first duality is diale
 
 ### 2.5 The Triadic Structure of Phenomenal Cognition
 
-The dual-dual structure generates three phenomenologically distinct layers of cognition. Each layer has its own dynamics, its own temporality, and its own relationship to the E–P oscillator — but they are not independent modules. They are aspects of a single coupled system, distinguished by the level of abstraction at which they operate.
+The dual-dual structure generates three phenomenologically distinct layers of cognition. The super-conscious layer embodies a horizontal duality — better understood as a dialectic — between empowerment and plasticity, whose oscillation modulates the vertical duality between the conscious (index) layer and the sub-conscious (dynamic) layer. Each layer has its own dynamics, its own temporality, and its own relationship to the E–P oscillator — but they are not independent modules. They are aspects of a single coupled system, distinguished by the level of abstraction at which they operate.
 
 #### Super-Conscious: The E–P Dialectic
 
