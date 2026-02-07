@@ -18,11 +18,15 @@ We propose Vitality as a formal theory of autonomous development grounded in pla
 
 Play appears across species wherever nervous systems support flexible behavior. Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition, explicitly characterizing it through *vitality affects* and *vitality dynamics* — the reciprocal, temporally structured emotional exchanges between infant and caregiver that scaffold all later development; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities. The term "vitality" itself has deep roots in developmental psychology, grounding our formalism in the empirical study of dynamic, reciprocal engagement.
 
-![Developmental psychology describes how infants explore, grow through cognitive stages, and learn social skills. Developmental robotics builds embodied agents that implement candidate learning mechanisms. Combined through play, accurate descriptions guide construction — and construction tests descriptions. We also intend to add folk psychology — including both religion and philosophy — as informing developmental psychology alongside the origin of life.](figures/describe_build.png)
-
 This is not merely a metaphor. When we say play is the mother of all values, we mean it mechanistically: play exhibits a specific architecture — two complementary capacities in a self-sustaining loop — that generates open-ended development without external reward signals. What follows after a brief overview of our synthetic multidisciplinary approach to going beyond optimization methods to developmental mechanism is a mechanization of play — a formal account of its two capacities and the architecture they generate.
 
-### 1.2 First Capacity: Dynamic Bidirectional Engagement
+### 1.2 Methodology
+
+Our approach is synthetic and multidisciplinary: we bring together developmental psychology, developmental robotics, and formal mathematics not as separate contributions but as mutually constraining disciplines. Accurate descriptions of how organisms develop guide the construction of artificial agents — and the successes and failures of those constructions test the descriptions. This creative scientific style is visualized in Figure 1.
+
+![Developmental psychology describes how infants explore, grow through cognitive stages, and learn social skills. Developmental robotics builds embodied agents that implement candidate learning mechanisms. Combined through play, accurate descriptions guide construction — and construction tests descriptions. We also intend to add folk psychology — including both religion and philosophy — as informing developmental psychology alongside the origin of life.](figures/describe_build.png)
+
+### 1.3 First Capacity: Dynamic Bidirectional Engagement
 
 Consider rough-and-tumble play: animals oscillate between influence and receptivity. If one player only pins (pure domination), the game ends. If one player is only pinned (pure submission), the game ends. The game persists if and only if both participants oscillate between affecting and being affected.
 
@@ -30,13 +34,13 @@ We formalize this as two complementary capacities. **Affecting** (empowerment) i
 
 The oscillatory structure is straightforward: perturb the world, observe the result, update your behavior, re-perturb. When this oscillation collapses, the developmental engine stalls.
 
-### 1.3 Second Capacity: Symbolic Abstraction
+### 1.4 Second Capacity: Symbolic Abstraction
 
 Consider pretend play: a child picks up a stick and calls it a sword. The operation is abstract the functional role, map it onto a novel substrate, operate on the abstraction. This is symbolic computation in its most basic form: extract structural invariants from experience, recombine them in novel configurations. Piaget called this accommodation leading to assimilation at higher levels.
 
 The symbolic capacity couples naturally to the dynamic capacity. Active probing discovers transformation-invariant features. Once extracted, these symbols become new control targets. For example, once a child abstracts "tool," they begin seeking control over tool-use at this higher level of abstraction, not just control over individual graspable objects.
 
-### 1.4 The Developmental Loop
+### 1.5 The Developmental Loop
 
 **Definition (Play as Developmental Loop).** Play implements a self-organizing developmental cycle:
 
@@ -49,7 +53,7 @@ Result: open-ended growth without external rewards or hand-designed curricula.
 
 Symbolic abstraction is *interiorization* — the world's causal structure is taken inward and consolidated as reusable representational inventory. Projection is *exteriorization* — internal symbolic structure is cast back outward as new control targets, reshaping how the agent engages with the world. The developmental loop is this rhythm of interiorization and exteriorization, each feeding the other.
 
-### 1.5 The Dual-Dual Structure
+### 1.6 The Dual-Dual Structure
 
 The two capacities generate a dual-dual architecture. The first duality is dialectical: E and P are mutually regulating opposites whose oscillation constitutes the developmental dynamic. The second is the dual-laws model (Ohmura et al.): feedback error is independently reducible at two levels: by changing weights or executing actions at the base level, or by changing the mathematical structure of the equations themselves — augmenting the relationships between the indices — at the supervenience level. Together these produce a natural three-layer phenomenology.
 
@@ -65,7 +69,7 @@ The supervenience level in the dual-laws model. Already-learned representations 
 
 The base level. This layer changes to satisfy the constraints generated by the higher layer, either through **learning** (algebraic constraint learning lives here) or through **behavior** (feedback control and reflexes). This is Type 1 processing: continuous, goal-directed, subsymbolic. It encompasses the embodied dynamics of the agent–world coupling: motor control, proprioception, sensorimotor loops — the physics of interaction through which all higher-level structure must ultimately be realized. Crucially, through execution and reflexes this layer generates the interaction data from which new representations will be extracted, feeding back up to the conscious and super-conscious layers. The sub-conscious is both the executor and the data source — it enacts the schemas selected above and, in doing so, produces the raw material from which further schemas are learned.
 
-### 1.6 Klopf's Critique and the Nature of Autonomy
+### 1.7 Klopf's Critique and the Nature of Autonomy
 
 Klopf (1982) — the forefather of reinforcement learning — built his entire thesis around positive feedback. His *Hedonistic Neuron* argued that neurons are fundamentally reward-seeking: they do not merely reduce error, they pursue stimulation. Classical cybernetics — Wiener, Ashby — had built a science of homeostasis, negative feedback toward set-points. Klopf diagnosed this as a fundamental omission. Living systems are also self-amplifying: they seek stimulation, escalate challenges, pursue novelty. He called this *heterostasis*, the drive toward more rather than back to baseline. Sepulchre (2022) showed from engineering that robust adaptive systems require both positive and negative feedback coupled together. Negative feedback alone converges to a fixed point. Positive feedback alone explodes. Development, learning, and play all require both, coupled.
 
