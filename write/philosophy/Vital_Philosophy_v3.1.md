@@ -325,6 +325,10 @@ Consider: increased vitality necessitates what we might call "excess viability"-
 
 ## The Cracks in the Survival Story
 
+We should be clear about the nature of the claim we are making. This is not an argument against Darwin. Natural selection is real, well-evidenced, and indispensable. What we are challenging is the *metaphysical overreach* that has been built on top of it---the quiet elevation of survival from a biological mechanism to a cosmological first principle, from one important force among many to the *sole* explanatory ground of all living activity. This is Darwinian reductionism: not Darwin's own careful empiricism, but the philosophical habit of treating every feature of life as a survival adaptation until proven otherwise, and then, when proven otherwise, treating it as a survival adaptation anyway.
+
+The reductionist move is always the same: begin with the assumption that survival explains everything, encounter a phenomenon that does not obviously serve survival, and then either (a) construct an increasingly baroque adaptive story to explain it, or (b) dismiss it as noise---a spandrel, an epiphenomenon, an accident. What is never permitted is the simplest hypothesis of all: that the phenomenon exists because the organism is doing something *more* than surviving. The survival story does not merely explain too much; it *forbids* the question it cannot answer. And the question it cannot answer is: why do living systems consistently produce more than they need?
+
 But the survival story has systematic blind spots:
 
 **Excessive complexity**: Organisms are vastly more complex than survival requires. The peacock's tail, the bower bird's architecture, the human capacity for abstract mathematics---none of these are parsimoniously explained by survival pressure alone. They represent *creative excess*---the organism doing more than is necessary, generating more variation than selection demands.
