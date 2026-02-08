@@ -24,7 +24,7 @@ This is not merely a metaphor. When we say play is the mother of all values, we 
 
 ### 1.2 Methodology
 
-Our approach is synthetic and multidisciplinary: we bring together developmental psychology, developmental robotics, and formal mathematics not as separate contributions but as mutually constraining disciplines. Accurate descriptions of how organisms develop guide the construction of artificial agents — and the successes and failures of those constructions test the descriptions. We are, in this regard, not unlike the alchemists playing with their mercury to transmute it into gold, or the pirate on the high seas in search of the fountain of youth. We differ only in the material of our play, which happens to be modern information-theoretic technology. We begin with developmental psychology — and it is not lost on us that *psyche* is the Greek for soul. The search for what makes the living *live*, the causal and eleatic soul of the organism, is the oldest question psychology ever asked (Roachford 2023). We are simply resuming it with better tools. This creative scientific style is visualized in Figure 1.
+Our approach is synthetic and multidisciplinary: we bring together developmental psychology, developmental robotics, and formal mathematics not as separate contributions but as mutually constraining disciplines. Accurate descriptions of how organisms develop guide the construction of artificial agents — and the successes and failures of those constructions test the descriptions. We are, in this regard, not unlike the alchemists playing with their mercury to transmute it into gold, or the pirate on the high seas in search of the fountain of youth. We differ only in the material of our play, which happens to be modern information-theoretic technology. We begin with developmental psychology — and it is not lost on us that *psyche* is the Greek for soul. The search for what makes the living *live*, the causal and eleatic soul of the organism, is the oldest question psychology ever asked, an inheritance from none other than religion itself. We are simply resuming it with better tools. This creative scientific style is visualized in Figure 1.
 
 ![Developmental psychology describes how infants explore, grow through cognitive stages, and learn social skills. Developmental robotics builds embodied agents that implement candidate learning mechanisms. Combined through play, accurate descriptions guide construction — and construction tests descriptions. We also intend to add folk psychology — including both religion and philosophy — as informing developmental psychology alongside the origin of life.](figures/describe_build.png)
 
@@ -389,8 +389,6 @@ Piaget, J. (1954). *The Construction of Reality in the Child*. Basic Books.
 Poole, B., Ozair, S., Van Den Oord, A., Alemi, A. & Tucker, G. (2019). On Variational Bounds of Mutual Information. *ICML*.
 
 Powers, W.T. (1973). *Behavior: The Control of Perception*. Aldine.
-
-Roachford, T. (2023). Ensoul: A Framework for the Creation of Self Organizing Intelligent Ultra Low Power Systems (SOULS) through Evolutionary Enerstatic Networks. *arXiv:2304.13863*.
 
 Scannell, A., et al. (2025). Discrete Codebook World Models. *ICLR*.
 
