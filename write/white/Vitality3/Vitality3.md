@@ -16,7 +16,9 @@ We propose Vitality as a formal theory of autonomous development grounded in pla
 
 ### 1.1 Introduction
 
-Play appears across species wherever nervous systems support flexible behavior. Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition, explicitly characterizing it through *vitality affects* and *vitality dynamics* — the reciprocal, temporally structured emotional exchanges between infant and caregiver that scaffold all later development; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities. The term "vitality" itself has deep roots in developmental psychology, grounding our formalism in the empirical study of dynamic, reciprocal engagement.
+The term "vitality" is not our invention. Stern (2010) introduced *vitality affects* and later *forms of vitality* as the dynamic, felt qualities of experience — the surging, fading, explosive, or gentle contours that accompany all human action and perception. Trevarthen identified an *intrinsic motive pulse* — an innate rhythmic organization of intention and feeling that drives communicative engagement from birth (Trevarthen 1999). As Trevarthen puts it: "play is the regulation of vitality" (Trevarthen, in Delafield-Butt & Reddy 2025). We take this seriously and literally.
+
+Play appears across species wherever nervous systems support flexible behavior. Piaget demonstrated that play is central to cognitive construction; Trevarthen showed that intersubjective play founds social cognition, explicitly characterizing it through vitality affects and vitality dynamics — the reciprocal, temporally structured emotional exchanges between infant and caregiver that scaffold all later development; Panksepp identified dedicated neural circuitry for play that cannot be reduced to other motivational systems. Play has structure — it is not random exploration, but rather a specific behavioral regime characterized by two complementary capacities.
 
 This is not merely a metaphor. When we say play is the mother of all values, we mean it mechanistically: play exhibits a specific architecture — two complementary capacities in a self-sustaining loop — that generates open-ended development without external reward signals. What follows after a brief overview of our synthetic multidisciplinary approach to going beyond optimization methods to developmental mechanism is a mechanization of play — a formal account of its two capacities and the architecture they generate.
 
@@ -68,7 +70,7 @@ The dual-dual structure generates three phenomenologically distinct layers of co
 
 #### Super-Conscious: The E–P Dialectic
 
-The bidirectional engagement layer. Empowerment and plasticity co-regulate each other as a Turing-style oscillator — the pre-symbolic drive that selects what is worth attending to and generates the developmental dynamic. This is the first duality: E without P is rigidity, P without E is dissolution, and the system lives in their oscillation. In phenomenal terms this is the true self which sits behind all action and perception — the difference which makes a difference, the silent watcher, the gentle gardener and the slave driver, the seat of the soul — it lives at the level of causation. This is the mercurial hermaphrodite, the true will to power, the cosmic child, the coincidentia oppositorum, the prima materia and the goal of its own transformation (Jung 1967) — of every living thing.
+The bidirectional engagement layer. Empowerment and plasticity co-regulate each other as a Turing-style oscillator — the pre-symbolic drive that selects what is worth attending to and generates the developmental dynamic. This is the first duality: E without P is rigidity, P without E is dissolution, and the system lives in their oscillation. In phenomenal terms this is the true self which sits behind all action and perception — the difference which makes a difference, the silent watcher, the gentle gardener and the slave driver, the seat of the soul — it lives at the level of causation. This is the mercurial hermaphrodite, the true will to power, the cosmic child, the coincidentia oppositorum, the prima materia and the goal of its own transformation (Jung 1967) — of every living thing. In more measured vocabulary, this is the locus of agency.
 
 #### Conscious: The Symbolic Index Layer
 
@@ -394,6 +396,8 @@ Scannell, A., et al. (2025). Discrete Codebook World Models. *ICLR*.
 
 Sepulchre, R. (2022). Control Across Scales. *Annual Review of Control, Robotics, and Autonomous Systems*.
 
+Stern, D.N. (2010). *Forms of Vitality: Exploring Dynamic Experience in Psychology and the Arts*. Oxford University Press.
+
 Shannon, C.E. & Weaver, W. (1949). *The Mathematical Theory of Communication*. University of Illinois Press.
 
 Simoes, F., et al. (2024). Fundamental Properties of Causal Entropy and Information Gain. *PMLR*, 236.
@@ -401,6 +405,10 @@ Simoes, F., et al. (2024). Fundamental Properties of Causal Entropy and Informat
 Song, J. & Ermon, S. (2020). Understanding the Limitations of Variational Mutual Information Estimators. *ICLR*.
 
 Trevarthen, C. (1979). Communication and Cooperation in Early Infancy. In *Before Speech*. Cambridge University Press.
+
+Trevarthen, C. (1999). Musicality and the Intrinsic Motive Pulse. *Musicae Scientiae*, Special Issue, 155–215.
+
+Trevarthen, C. (2025). In J. Delafield-Butt & V. Reddy (Eds.), *Intersubjective Minds: Rhythm, Sympathy, and Human Being*. Oxford University Press.
 
 van den Oord, A., et al. (2017). Neural Discrete Representation Learning. *NeurIPS*.
 
